@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<PMML xmlns="http://www.dmg.org/PMML-4_3" version="4.3">
+	<Header>
+		<Application name="JPMML-SkLearn" version="1.4.1"/>
+		<Timestamp>2017-12-25T01:53:53Z</Timestamp>
+	</Header>
+	<MiningBuildTask>
+		<Extension>PMMLPipeline(steps=[('mapper', DataFrameMapper(default=False, df_out=False,
+        features=[(['f_1', 'f_2', 'f_3', 'f_4'], [ContinuousDomain(), Imputer(axis=0, copy=True, missing_values='NaN', strategy='mean', verbose=0)])],
+        input_df=False, sparse=False)),
+       ('pca', PCA(copy=True, iterated_power='auto', n_components=3, random_state=None,
+  svd_solver='auto', tol=0.0, whiten=False)),
+       ('selector', SelectKBest(k=2, score_func=&lt;function f_classif at 0x1080bac80&gt;)),
+       ('classifier', LogisticRegression(C=1.0, class_weight=None, dual=False, fit_intercept=True,
+          intercept_scaling=1, max_iter=100, multi_class='ovr', n_jobs=1,
+          penalty='l2', random_state=None, solver='liblinear', tol=0.0001,
+          verbose=0, warm_start=False))])</Extension>
+	</MiningBuildTask>
+	<DataDictionary>
+		<DataField name="res" optype="categorical" dataType="string">
+			<Value value="setosa"/>
+			<Value value="versicolor"/>
+			<Value value="virginica"/>
+		</DataField>
+		<DataField name="f_1" optype="continuous" dataType="double">
+			<Interval closure="closedClosed" leftMargin="4.3" rightMargin="7.9"/>
+		</DataField>
+		<DataField name="f_2" optype="continuous" dataType="double">
+			<Interval closure="closedClosed" leftMargin="2.0" rightMargin="4.4"/>
+		</DataField>
+		<DataField name="f_3" optype="continuous" dataType="double">
+			<Interval closure="closedClosed" leftMargin="1.0" rightMargin="6.9"/>
+		</DataField>
+		<DataField name="f_4" optype="continuous" dataType="double">
+			<Interval closure="closedClosed" leftMargin="0.1" rightMargin="2.5"/>
+		</DataField>
+	</DataDictionary>
+	<TransformationDictionary>
+		<DerivedField name="pca@1[0]" optype="continuous" dataType="double">
+			<Apply function="sum">
+				<Apply function="*">
+					<Apply function="-">
+						<FieldRef field="f_1"/>
+						<Constant dataType="double">5.843333333333334</Constant>
+					</Apply>
+					<Constant dataType="double">0.3615896773814495</Constant>
+				</Apply>
+				<Apply function="*">
+					<Apply function="-">
+						<FieldRef field="f_2"/>
+						<Constant dataType="double">3.0540000000000003</Constant>
+					</Apply>
+					<Constant dataType="double">-0.08226888989221401</Constant>
+				</Apply>
+				<Apply function="*">
+					<Apply function="-">
+						<FieldRef field="f_3"/>
+						<Constant dataType="double">3.758666666666666</Constant>
+					</Apply>
+					<Constant dataType="double">0.8565721052905279</Constant>
+				</Apply>
+				<Apply function="*">
+					<Apply function="-">
+						<FieldRef field="f_4"/>
+						<Constant dataType="double">1.1986666666666668</Constant>
+					</Apply>
+					<Constant dataType="double">0.3588439262482154</Constant>
+				</Apply>
+			</Apply>
+		</DerivedField>
+		<DerivedField name="pca@1[1]" optype="continuous" dataType="double">
+			<Apply function="sum">
+				<Apply function="*">
+					<Apply function="-">
+						<FieldRef field="f_1"/>
+						<Constant dataType="double">5.843333333333334</Constant>
+					</Apply>
+					<Constant dataType="double">0.6565398832858315</Constant>
+				</Apply>
+				<Apply function="*">
+					<Apply function="-">
+						<FieldRef field="f_2"/>
+						<Constant dataType="double">3.0540000000000003</Constant>
+					</Apply>
+					<Constant dataType="double">0.7297123713264962</Constant>
+				</Apply>
+				<Apply function="*">
+					<Apply function="-">
+						<FieldRef field="f_3"/>
+						<Constant dataType="double">3.758666666666666</Constant>
+					</Apply>
+					<Constant dataType="double">-0.17576740342865413</Constant>
+				</Apply>
+				<Apply function="*">
+					<Apply function="-">
+						<FieldRef field="f_4"/>
+						<Constant dataType="double">1.1986666666666668</Constant>
+					</Apply>
+					<Constant dataType="double">-0.07470647013503319</Constant>
+				</Apply>
+			</Apply>
+		</DerivedField>
+	</TransformationDictionary>
+	<RegressionModel functionName="classification" normalizationMethod="logit">
+		<MiningSchema>
+			<MiningField name="res" usageType="target"/>
+			<MiningField name="f_1" missingValueReplacement="5.843333333333334" missingValueTreatment="asMean"/>
+			<MiningField name="f_2" missingValueReplacement="3.0540000000000003" missingValueTreatment="asMean"/>
+			<MiningField name="f_3" missingValueReplacement="3.758666666666666" missingValueTreatment="asMean"/>
+			<MiningField name="f_4" missingValueReplacement="1.1986666666666668" missingValueTreatment="asMean"/>
+		</MiningSchema>
+		<Output>
+			<OutputField name="probability(setosa)" optype="continuous" dataType="double" feature="probability" value="setosa"/>
+			<OutputField name="probability(versicolor)" optype="continuous" dataType="double" feature="probability" value="versicolor"/>
+			<OutputField name="probability(virginica)" optype="continuous" dataType="double" feature="probability" value="virginica"/>
+		</Output>
+		<ModelStats>
+			<UnivariateStats field="f_1">
+				<Counts totalFreq="150.0" missingFreq="0.0" invalidFreq="0.0"/>
+				<NumericInfo minimum="4.3" maximum="7.9" mean="5.843333333333335" standardDeviation="0.8253012917851409" median="5.8" interQuartileRange="1.3000000000000007"/>
+			</UnivariateStats>
+			<UnivariateStats field="f_2">
+				<Counts totalFreq="150.0" missingFreq="0.0" invalidFreq="0.0"/>
+				<NumericInfo minimum="2.0" maximum="4.4" mean="3.0540000000000007" standardDeviation="0.4321465800705435" median="3.0" interQuartileRange="0.5"/>
+			</UnivariateStats>
+			<UnivariateStats field="f_3">
+				<Counts totalFreq="150.0" missingFreq="0.0" invalidFreq="0.0"/>
+				<NumericInfo minimum="1.0" maximum="6.9" mean="3.7586666666666693" standardDeviation="1.7585291834055201" median="4.35" interQuartileRange="3.4999999999999996"/>
+			</UnivariateStats>
+			<UnivariateStats field="f_4">
+				<Counts totalFreq="150.0" missingFreq="0.0" invalidFreq="0.0"/>
+				<NumericInfo minimum="0.1" maximum="2.5" mean="1.1986666666666672" standardDeviation="0.760612618588172" median="1.3" interQuartileRange="1.5"/>
+			</UnivariateStats>
+		</ModelStats>
+		<RegressionTable intercept="-1.8604897496335018" targetCategory="setosa">
+			<NumericPredictor name="pca@1[0]" coefficient="-2.222878585154683"/>
+			<NumericPredictor name="pca@1[1]" coefficient="1.2729473311510842"/>
+		</RegressionTable>
+		<RegressionTable intercept="-0.806024409635066" targetCategory="versicolor">
+			<NumericPredictor name="pca@1[0]" coefficient="0.24201612215143586"/>
+			<NumericPredictor name="pca@1[1]" coefficient="-1.5921152338820286"/>
+		</RegressionTable>
+		<RegressionTable intercept="-3.1130588502426697" targetCategory="virginica">
+			<NumericPredictor name="pca@1[0]" coefficient="2.5067169552862447"/>
+			<NumericPredictor name="pca@1[1]" coefficient="-0.9893791208167914"/>
+		</RegressionTable>
+	</RegressionModel>
+</PMML>

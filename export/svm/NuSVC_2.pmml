@@ -1,0 +1,2269 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<PMML xmlns="http://www.dmg.org/PMML-4_3" version="4.3">
+	<Header>
+		<Application name="JPMML-SkLearn" version="1.4.1"/>
+		<Timestamp>2017-12-25T12:46:02Z</Timestamp>
+	</Header>
+	<DataDictionary>
+		<DataField name="y" optype="categorical" dataType="string">
+			<Value value="a"/>
+			<Value value="am"/>
+			<Value value="bm"/>
+			<Value value="c"/>
+			<Value value="d"/>
+			<Value value="dm"/>
+			<Value value="e"/>
+			<Value value="em"/>
+			<Value value="f"/>
+			<Value value="g"/>
+		</DataField>
+		<DataField name="x1" optype="continuous" dataType="double"/>
+		<DataField name="x2" optype="continuous" dataType="double"/>
+		<DataField name="x3" optype="continuous" dataType="double"/>
+		<DataField name="x4" optype="continuous" dataType="double"/>
+		<DataField name="x5" optype="continuous" dataType="double"/>
+		<DataField name="x6" optype="continuous" dataType="double"/>
+		<DataField name="x7" optype="continuous" dataType="double"/>
+		<DataField name="x8" optype="continuous" dataType="double"/>
+		<DataField name="x9" optype="continuous" dataType="double"/>
+		<DataField name="x10" optype="continuous" dataType="double"/>
+		<DataField name="x11" optype="continuous" dataType="double"/>
+		<DataField name="x12" optype="continuous" dataType="double"/>
+	</DataDictionary>
+	<SupportVectorMachineModel functionName="classification" classificationMethod="OneAgainstOne">
+		<MiningSchema>
+			<MiningField name="y" usageType="target"/>
+			<MiningField name="x1"/>
+			<MiningField name="x2"/>
+			<MiningField name="x3"/>
+			<MiningField name="x4"/>
+			<MiningField name="x5"/>
+			<MiningField name="x6"/>
+			<MiningField name="x7"/>
+			<MiningField name="x8"/>
+			<MiningField name="x9"/>
+			<MiningField name="x10"/>
+			<MiningField name="x11"/>
+			<MiningField name="x12"/>
+		</MiningSchema>
+		<RadialBasisKernelType gamma="0.08333333333333333"/>
+		<VectorDictionary>
+			<VectorFields>
+				<FieldRef field="x1"/>
+				<FieldRef field="x2"/>
+				<FieldRef field="x3"/>
+				<FieldRef field="x4"/>
+				<FieldRef field="x5"/>
+				<FieldRef field="x6"/>
+				<FieldRef field="x7"/>
+				<FieldRef field="x8"/>
+				<FieldRef field="x9"/>
+				<FieldRef field="x10"/>
+				<FieldRef field="x11"/>
+				<FieldRef field="x12"/>
+			</VectorFields>
+			<VectorInstance id="0">
+				<Array type="real">0.0023146720000000003 0.135411232 0.002753805 0.0016777679999999998 0.22138365399999999 0.00597967 0.006189081999999999 0.013713445 0.082794455 0.508238396 0.007580531 0.011963292</Array>
+			</VectorInstance>
+			<VectorInstance id="1">
+				<Array type="real">0.002056826 0.168865345 0.004598776 0.0020258579999999997 0.20818491600000003 0.0066744840000000005 0.00434321 0.016536385 0.056140058 0.507057853 0.012546033 0.010970256000000001</Array>
+			</VectorInstance>
+			<VectorInstance id="2">
+				<Array type="real">0.00479656 0.120686264 0.012316478999999998 0.003529027 0.255864302 0.021141994 0.003666175 0.05414632 0.13507176699999998 0.338071706 0.014407347 0.036302062</Array>
+			</VectorInstance>
+			<VectorInstance id="3">
+				<Array type="real">0.002136303 0.19358802600000002 0.001738648 0.00181325 0.266608764 0.009156056999999999 0.0034361879999999997 0.018840304 0.042573043 0.445108044 0.0059794340000000005 0.009021941</Array>
+			</VectorInstance>
+			<VectorInstance id="4">
+				<Array type="real">0.003751528 0.202985463 0.0019048079999999998 0.00520612 0.129995243 0.003373987 0.006172838000000001 0.034550492 0.126418642 0.462381031 0.018395584 0.004864263</Array>
+			</VectorInstance>
+			<VectorInstance id="5">
+				<Array type="real">0.0026552 0.22819683899999998 0.002231481 0.002316274 0.09320947800000001 0.004837872 0.006618135 0.053357459 0.040489276 0.556192159 0.006509664 0.0033861629999999998</Array>
+			</VectorInstance>
+			<VectorInstance id="6">
+				<Array type="real">0.003633322 0.205756994 0.0038992709999999997 0.005799393000000001 0.136796213 0.00779296 0.005108477 0.004327384 0.020959763 0.565593508 0.025865606 0.014467108999999999</Array>
+			</VectorInstance>
+			<VectorInstance id="7">
+				<Array type="real">0.010036205999999999 0.18741264600000002 0.00251562 0.006303638 0.24589651399999998 0.040690276000000004 0.013279476 0.0623072 0.17086810100000002 0.233701557 0.017399595 0.009589172</Array>
+			</VectorInstance>
+			<VectorInstance id="8">
+				<Array type="real">0.0056515509999999995 0.186336124 0.003310016 0.005735648 0.159008441 0.007499134 0.013265521 0.038010621 0.06923665400000001 0.488114857 0.008684952 0.015146481000000002</Array>
+			</VectorInstance>
+			<VectorInstance id="9">
+				<Array type="real">0.015946352 0.311121688 0.007381670999999999 0.0069503709999999995 0.171899849 0.004923028 0.010475766999999999 0.028992365 0.045457227999999995 0.332306092 0.03641556 0.028130028999999997</Array>
+			</VectorInstance>
+			<VectorInstance id="10">
+				<Array type="real">0.09847678 0.017527609 6.922569999999999E-4 0.0016769579999999999 0.153132463 0.004964765 0.0016703220000000001 0.054886053 0.039800102999999996 0.594268767 0.028838878999999998 0.004065043</Array>
+			</VectorInstance>
+			<VectorInstance id="11">
+				<Array type="real">0.058005637 0.024068274 0.0042374529999999995 0.005043234000000001 0.411542786 0.003756438 0.010782531000000001 0.067409142 0.051261483 0.275011234 0.035491591 0.053390197</Array>
+			</VectorInstance>
+			<VectorInstance id="12">
+				<Array type="real">0.049568327 0.021638966000000003 0.003536698 0.002306574 0.281252461 0.006036382 0.011018973999999999 0.027295944 0.014140979 0.5623073710000001 0.007743326 0.013153998</Array>
+			</VectorInstance>
+			<VectorInstance id="13">
+				<Array type="real">0.044183924000000006 0.021091917 0.005933793000000001 0.01109013 0.212013146 0.0070017330000000004 0.040608658 0.041308731 0.015873129 0.538854961 0.050220237 0.01181964</Array>
+			</VectorInstance>
+			<VectorInstance id="14">
+				<Array type="real">0.068824629 0.020049458 0.005336291 0.004224538 0.247490163 0.005429524 0.025176037999999998 0.11447027300000001 0.115059187 0.34398747700000004 0.025665982 0.02428644</Array>
+			</VectorInstance>
+			<VectorInstance id="16">
+				<Array type="real">0.03257766 0.015178714 0.00487542 0.005651939 0.21419039899999998 0.008633946 0.011776521000000002 0.066540801 0.090933855 0.46706211799999997 0.04598942599999999 0.036589202</Array>
+			</VectorInstance>
+			<VectorInstance id="17">
+				<Array type="real">0.057010602 0.017032441000000002 0.007861535 0.006205268000000001 0.213559392 0.004525212 0.012013778000000001 0.0355358 0.045913145999999995 0.5568207239999999 0.036568704 0.006953399</Array>
+			</VectorInstance>
+			<VectorInstance id="18">
+				<Array type="real">0.065685651 0.023806202000000002 0.007654043 0.006041316 0.20355599 0.003667507 0.014200371000000002 0.054502383 0.031177762 0.555119951 0.021258199999999998 0.013330624</Array>
+			</VectorInstance>
+			<VectorInstance id="19">
+				<Array type="real">0.066610813 0.005290026999999999 0.003068355 0.0018428160000000002 0.34086888600000004 0.003006586 0.008597432 0.086969634 0.08838700699999999 0.294602558 0.038128044 0.062627843</Array>
+			</VectorInstance>
+			<VectorInstance id="20">
+				<Array type="real">0.005112729 0.012869205 0.08618927900000001 0.006965908000000001 0.0030195879999999997 0.005145428 0.423687737 0.028380809 0.00848468 0.008323444000000001 0.019488712 0.392332481</Array>
+			</VectorInstance>
+			<VectorInstance id="22">
+				<Array type="real">0.004418745 0.013264676999999999 0.048592015999999995 0.00546748 0.005458511 0.004383008 0.328190684 0.022040049 0.0045425 0.008239239 0.012842171000000001 0.542560919</Array>
+			</VectorInstance>
+			<VectorInstance id="23">
+				<Array type="real">0.002545889 0.043714847 0.041732035 0.0045166979999999995 0.001327767 0.002247155 0.366549013 0.01684247 0.030964858999999997 0.017643675 0.029813192000000002 0.442102399</Array>
+			</VectorInstance>
+			<VectorInstance id="25">
+				<Array type="real">0.007802685 0.024913373 0.234729826 0.005413077 0.005221502 0.004722047 0.38493898299999996 0.037927592 0.021147197000000003 0.035339598 0.024465544 0.21337857699999999</Array>
+			</VectorInstance>
+			<VectorInstance id="26">
+				<Array type="real">0.007157145 0.008627553 0.065679745 0.0027883590000000002 0.0017785029999999999 0.0027716570000000003 0.235818435 0.052011654000000004 0.022782931 0.008384175 0.0076242359999999995 0.584575608</Array>
+			</VectorInstance>
+			<VectorInstance id="27">
+				<Array type="real">0.003618398 0.060479662999999996 0.11119449999999999 0.003412715 0.008691254 0.00360869 0.289079968 0.020752346 0.042335998 0.014908855 0.026999872 0.414917741</Array>
+			</VectorInstance>
+			<VectorInstance id="28">
+				<Array type="real">0.004091238 0.015277236000000001 0.057444413 0.00384668 0.0023124829999999997 0.00536581 0.37602244799999995 0.042645173 0.006485534 0.0063246959999999994 0.008940504 0.471243785</Array>
+			</VectorInstance>
+			<VectorInstance id="29">
+				<Array type="real">0.002496769 0.032477811 0.070089896 0.002157923 0.003967468 0.0047007690000000005 0.387601724 0.024777235 0.019752929 0.01749234 0.024671146 0.40981399</Array>
+			</VectorInstance>
+			<VectorInstance id="30">
+				<Array type="real">0.3719365 0.0028833070000000003 0.010446774 8.8084E-4 0.143795332 0.001692095 0.02385182 0.38056091200000003 0.029103308999999997 0.009297956999999999 0.008411809000000001 0.017139344</Array>
+			</VectorInstance>
+			<VectorInstance id="32">
+				<Array type="real">0.29328624 0.007899396 0.015876923 0.002050986 0.160585446 0.0053924559999999995 0.013032778 0.414572184 0.030477757 0.004591972 0.014077648 0.038156214</Array>
+			</VectorInstance>
+			<VectorInstance id="33">
+				<Array type="real">0.36028986799999996 0.007871517 0.019110225 0.003274555 0.167318306 0.004324953 0.038335133 0.350464513 0.023247577999999998 0.0019516429999999999 0.011618626000000002 0.012193082</Array>
+			</VectorInstance>
+			<VectorInstance id="35">
+				<Array type="real">0.20370580100000002 0.003200208 0.007057959 0.002839633 0.09374641 0.002179431 0.031632191000000004 0.5882708320000001 0.031832 0.005133301 0.006641459000000001 0.023760774</Array>
+			</VectorInstance>
+			<VectorInstance id="36">
+				<Array type="real">0.134603614 0.002222176 0.004429477 0.001014425 0.072523173 0.0034878490000000003 0.018347169 0.708031557 0.043591185 0.001581025 0.001822002 0.008346349</Array>
+			</VectorInstance>
+			<VectorInstance id="37">
+				<Array type="real">0.24758857 0.004475718 0.027874516000000002 0.004656826 0.15950366800000002 0.008160985 0.022717084 0.373453572 0.038512568999999996 0.007172518 0.033971181 0.071912793</Array>
+			</VectorInstance>
+			<VectorInstance id="38">
+				<Array type="real">0.224976065 0.0038498440000000003 0.014372386000000001 0.003116481 0.159037187 0.003932165 0.028167717999999998 0.5089467879999999 0.013319814 0.003782147 0.01211029 0.024389115</Array>
+			</VectorInstance>
+			<VectorInstance id="39">
+				<Array type="real">0.484499904 0.0056898090000000005 0.01924604 0.0018340129999999998 0.177144312 0.00257629 0.02412568 0.24662586 0.009196122 0.0031520809999999997 0.007171663000000001 0.018738229</Array>
+			</VectorInstance>
+			<VectorInstance id="40">
+				<Array type="real">0.021806335 0.09317216099999999 0.292779528 0.01628472 0.009000258 0.004354587 0.24926505399999999 0.022181885 0.030361247999999997 0.212206545 0.034889749 0.013697931000000002</Array>
+			</VectorInstance>
+			<VectorInstance id="41">
+				<Array type="real">0.026138203999999998 0.037126564 0.284950853 0.00770585 0.00552606 0.005052144000000001 0.158361624 0.015412423 0.025799526 0.41194617 0.013277941000000001 0.008702642</Array>
+			</VectorInstance>
+			<VectorInstance id="42">
+				<Array type="real">0.011044913 0.035024703 0.28122574100000003 0.004369287 0.067802393 0.00262597 0.083259615 0.046264945999999994 0.07210897 0.377411366 0.013402158 0.0054599390000000005</Array>
+			</VectorInstance>
+			<VectorInstance id="43">
+				<Array type="real">0.015434136999999999 0.05358776 0.164052821 0.005282734 0.129056242 0.0075031130000000005 0.04791267 0.09607972 0.08804519699999999 0.346421152 0.037695952000000005 0.008928502</Array>
+			</VectorInstance>
+			<VectorInstance id="44">
+				<Array type="real">0.010808898 0.031731452 0.348896938 0.009213558 0.011085735 0.0038498779999999997 0.099815294 0.032686097000000004 0.008218191 0.412702535 0.021840698999999998 0.009150725</Array>
+			</VectorInstance>
+			<VectorInstance id="45">
+				<Array type="real">0.014543191 0.018835384 0.29517988300000003 0.006869874000000001 0.009466604 0.007215765 0.130112701 0.090808255 0.049969874000000004 0.359201592 0.011766313 0.006030562</Array>
+			</VectorInstance>
+			<VectorInstance id="46">
+				<Array type="real">0.004913606 0.018685048 0.25593656800000003 0.003502158 0.103464291 0.003948493 0.033095862000000004 0.032326911 0.071204978 0.448015241 0.013954881 0.010951963</Array>
+			</VectorInstance>
+			<VectorInstance id="47">
+				<Array type="real">0.008119599 0.014064917 0.154743249 0.002217911 0.014138013999999999 4.4531199999999995E-4 0.095449631 0.043978605 0.045755537 0.610199832 0.008703981999999999 0.002183411</Array>
+			</VectorInstance>
+			<VectorInstance id="48">
+				<Array type="real">0.013956331 0.049212405 0.16392841800000002 0.003464117 0.08802445699999999 0.005589534 0.06523856900000001 0.041626466 0.12960922800000002 0.367699161 0.03404223 0.037609085</Array>
+			</VectorInstance>
+			<VectorInstance id="49">
+				<Array type="real">0.008547365999999999 0.03786118 0.251346336 0.0030758990000000004 0.028738782 0.0025027960000000003 0.152491459 0.021218772 0.028032706 0.446330355 0.015830478000000002 0.00402387</Array>
+			</VectorInstance>
+			<VectorInstance id="50">
+				<Array type="real">0.032702972000000004 0.016092619 0.176799745 0.004027185 0.029812647999999997 0.030111705 0.015806773 0.028782005 0.042378724000000006 0.602912723 0.017310611 0.00326229</Array>
+			</VectorInstance>
+			<VectorInstance id="51">
+				<Array type="real">0.006987979 0.02042095 0.23467066 0.00369774 0.008050426 0.013758276000000002 0.026216791 0.034298231 0.032011281 0.6063780679999999 0.006245989 0.007263609</Array>
+			</VectorInstance>
+			<VectorInstance id="52">
+				<Array type="real">0.053957295 0.033339454 0.17885656800000002 0.005784892 0.140416501 0.019908191999999998 0.021338687999999998 0.069313444 0.053083503 0.39903909600000004 0.015349493999999998 0.009612875</Array>
+			</VectorInstance>
+			<VectorInstance id="53">
+				<Array type="real">0.032154882999999995 0.041623674 0.172578569 0.009736215999999999 0.020989491000000002 0.029295995 0.058833748 0.046234511 0.015081074 0.523319027 0.037234808 0.012918005</Array>
+			</VectorInstance>
+			<VectorInstance id="54">
+				<Array type="real">0.021464429 0.019685541 0.26060660399999996 0.006624367 0.005717113 0.040503234 0.067380541 0.10054307400000001 0.059936262000000004 0.398865495 0.011600066000000001 0.007073273000000001</Array>
+			</VectorInstance>
+			<VectorInstance id="56">
+				<Array type="real">0.032146052 0.014461213999999998 0.111972269 0.003252096 0.07028361 0.013349666999999999 0.01576024 0.06842169599999999 0.087626879 0.541245567 0.025676026 0.015804685</Array>
+			</VectorInstance>
+			<VectorInstance id="57">
+				<Array type="real">0.022880105 0.009046522 0.23231708899999998 0.003345703 0.083789577 0.015554211 0.017874203 0.037089036 0.04867532 0.520517997 0.006876876999999999 0.0020333589999999998</Array>
+			</VectorInstance>
+			<VectorInstance id="58">
+				<Array type="real">0.018282248 0.021824535 0.119155711 0.002106673 0.031326131 0.008660855 0.011631325 0.039670977 0.049900402999999996 0.677369455 0.008468910999999999 0.011602776</Array>
+			</VectorInstance>
+			<VectorInstance id="59">
+				<Array type="real">0.013406633999999999 0.013068178 0.097837505 0.0043411909999999995 0.02113621 0.012377203 0.061415872 0.115054818 0.06757608 0.565978436 0.018825906 0.008981966999999999</Array>
+			</VectorInstance>
+			<VectorInstance id="60">
+				<Array type="real">0.006390903000000001 0.00281529 0.007865213000000001 0.010823359 0.195710828 0.0032094790000000003 0.015726563 0.027371002000000002 0.207049552 0.008200127 0.00864551 0.506192175</Array>
+			</VectorInstance>
+			<VectorInstance id="61">
+				<Array type="real">0.006370724 0.00338154 0.004687675 0.031028632999999996 0.196743853 0.0051932079999999995 0.030858042999999998 0.014595005 0.23084298 0.009394668 0.015733352 0.451170319</Array>
+			</VectorInstance>
+			<VectorInstance id="62">
+				<Array type="real">0.002243578 7.065180000000001E-4 0.001449704 0.005690003000000001 0.079539901 0.002539221 0.013113625 0.072083005 0.541599174 0.0034293229999999997 0.004861127 0.272744821</Array>
+			</VectorInstance>
+			<VectorInstance id="63">
+				<Array type="real">0.009324304 0.003029713 0.016693672 0.027280592000000003 0.18661724100000002 0.003857251 0.025223361 0.032147029 0.30481999 0.007574844 0.011220738000000001 0.37221126600000004</Array>
+			</VectorInstance>
+			<VectorInstance id="64">
+				<Array type="real">0.012794108 0.007422852 0.00295363 0.018776413999999998 0.12829556 0.004470626 0.037905242 0.019339795 0.127264924 0.006495984000000001 0.009389134 0.62489173</Array>
+			</VectorInstance>
+			<VectorInstance id="65">
+				<Array type="real">0.005683791 0.0030913629999999997 0.0032036070000000002 0.018601531 0.13438367699999998 0.0048407170000000005 0.017793774 0.016155346 0.29394012199999997 0.026386926 0.034048248999999996 0.441870896</Array>
+			</VectorInstance>
+			<VectorInstance id="66">
+				<Array type="real">0.005584588000000001 0.003265798 0.004873154 0.006357596 0.112845374 0.002074121 0.022316757000000003 0.052042989000000005 0.273241943 0.005575500000000001 0.00728256 0.504539619</Array>
+			</VectorInstance>
+			<VectorInstance id="67">
+				<Array type="real">0.01193611 0.003079557 0.002520147 0.034915562000000004 0.127376451 0.002972468 0.025270344 0.011475771000000001 0.241223645 0.07503687 0.123856408 0.34033666700000004</Array>
+			</VectorInstance>
+			<VectorInstance id="68">
+				<Array type="real">0.00811892 0.0039125440000000004 0.020466532 0.014098433999999998 0.170974038 0.003447351 0.035732886 0.037904229 0.31544141800000003 0.012690471000000002 0.007198775 0.370014403</Array>
+			</VectorInstance>
+			<VectorInstance id="69">
+				<Array type="real">0.004447313 0.0030207009999999998 0.002004239 0.003833753 0.09813272099999999 0.0035267740000000003 0.02162151 0.059839521 0.34410759799999996 0.008343888 0.009441151 0.441680831</Array>
+			</VectorInstance>
+			<VectorInstance id="70">
+				<Array type="real">0.002368152 0.001241741 0.006825526 0.0034908240000000004 0.15562505199999999 0.0018125429999999998 0.035897929 0.25523584899999996 0.014781067 0.006638634 0.0050074790000000004 0.511075204</Array>
+			</VectorInstance>
+			<VectorInstance id="71">
+				<Array type="real">0.002469771 0.001252901 0.004122708 9.78741E-4 0.05902008 0.0025898089999999998 0.027512832 0.510628611 0.026492475 0.0029448879999999997 0.005249345999999999 0.356737837</Array>
+			</VectorInstance>
+			<VectorInstance id="72">
+				<Array type="real">0.002793121 0.002408907 0.019358721000000002 0.00781728 0.139643156 0.003340143 0.037310509 0.286003368 0.050816199000000006 0.015720839 0.041281275 0.39350648200000005</Array>
+			</VectorInstance>
+			<VectorInstance id="73">
+				<Array type="real">0.002788181 0.0022869270000000002 0.014522918999999999 0.007439653 0.112866218 0.006807945 0.044801495 0.308567432 0.028268163 0.005082276 0.008422384 0.458146406</Array>
+			</VectorInstance>
+			<VectorInstance id="74">
+				<Array type="real">0.002333423 0.0017205360000000002 0.004474932 0.0028997959999999996 0.10911062099999999 0.004390434 0.019905456000000002 0.539001373 0.032769241 0.004177748 0.006881043000000001 0.272335397</Array>
+			</VectorInstance>
+			<VectorInstance id="75">
+				<Array type="real">0.00299597 0.0026401659999999998 0.048821120999999995 0.012916845 0.15708608599999999 0.008981336 0.041044802000000005 0.335545235 0.083486698 0.021267882999999998 0.014634422 0.270579437</Array>
+			</VectorInstance>
+			<VectorInstance id="76">
+				<Array type="real">0.0018857720000000002 7.45165E-4 0.005494125 0.001400446 0.061728802 0.0014866229999999999 0.015597602 0.5967815989999999 0.024799223 0.002285714 0.003825878 0.283969052</Array>
+			</VectorInstance>
+			<VectorInstance id="77">
+				<Array type="real">0.003495986 0.0067275569999999995 0.016790373 0.004946192 0.17497201399999998 0.010091514000000001 0.050693413 0.313552525 0.029555473 0.0053346980000000006 0.013010248 0.370830008</Array>
+			</VectorInstance>
+			<VectorInstance id="78">
+				<Array type="real">0.002279836 0.004603142 0.014843422 0.00341261 0.142874397 0.003488334 0.033835032 0.454303545 0.02767919 0.006531536 0.003506005 0.302642951</Array>
+			</VectorInstance>
+			<VectorInstance id="79">
+				<Array type="real">0.0023576310000000002 0.0018523429999999998 0.009791181999999999 0.0027708040000000004 0.065411098 0.004569332 0.020815268999999997 0.526241254 0.044045187 0.004252735 0.0039736 0.31391956600000004</Array>
+			</VectorInstance>
+			<VectorInstance id="81">
+				<Array type="real">0.342086537 0.012681171000000001 0.0026968000000000005 0.003095137 0.045757245 0.315304545 0.010243693 0.079507815 0.020329937 0.145075534 0.014748851 0.008472735</Array>
+			</VectorInstance>
+			<VectorInstance id="82">
+				<Array type="real">0.238328805 0.008915646999999999 0.001287341 0.003042718 0.003746405 0.415313105 0.010664643 0.079998755 0.03306218 0.19354774600000002 0.005489684 0.0066029719999999995</Array>
+			</VectorInstance>
+			<VectorInstance id="83">
+				<Array type="real">0.387091411 0.0063470359999999995 0.0018130020000000002 0.003688399 0.027125389 0.300322587 0.006561428 0.029677618 0.03077417 0.187267128 0.009955445 0.009376386</Array>
+			</VectorInstance>
+			<VectorInstance id="84">
+				<Array type="real">0.26959477800000003 0.022274962000000002 0.001841739 0.004187845 0.003549756 0.32394263100000004 0.016081098000000002 0.048981703 0.030341422000000003 0.267219899 0.0053851509999999995 0.006599016</Array>
+			</VectorInstance>
+			<VectorInstance id="85">
+				<Array type="real">0.352274504 0.005930571 0.0031675609999999997 0.0034198040000000002 0.015104122 0.41941845 0.008938640999999999 0.04214084 0.006706304000000001 0.132354005 0.004453008 0.00609219</Array>
+			</VectorInstance>
+			<VectorInstance id="87">
+				<Array type="real">0.25230236 0.031248752999999997 0.007890835 0.013437909 0.032274639 0.284549215 0.01168158 0.029194092 0.010825123 0.304748158 0.012852124 0.008995213</Array>
+			</VectorInstance>
+			<VectorInstance id="88">
+				<Array type="real">0.25917447 0.009135329000000001 0.005076665 0.003242862 0.014800029 0.283068683 0.00648061 0.030501254 0.014830963 0.35788972 0.010000341 0.005799075</Array>
+			</VectorInstance>
+			<VectorInstance id="89">
+				<Array type="real">0.288792651 0.014021713 0.0021506389999999998 0.0038115659999999997 0.055919212999999995 0.311857481 0.012727713 0.036936473 0.074048854 0.17291738899999998 0.012793747 0.014022561999999999</Array>
+			</VectorInstance>
+			<VectorInstance id="90">
+				<Array type="real">0.013664576999999999 0.007336593000000001 0.33564738899999996 0.006125009 0.003571528 0.013945208999999998 0.090702608 0.33639410700000005 0.006832105 0.019889408 0.010631493 0.155259975</Array>
+			</VectorInstance>
+			<VectorInstance id="91">
+				<Array type="real">0.009358080999999999 0.009740736 0.19108930100000002 0.005446962 0.004598842 0.011774838999999999 0.032647318 0.41968668200000003 0.021830986 0.04571123 0.016835043 0.23127998</Array>
+			</VectorInstance>
+			<VectorInstance id="92">
+				<Array type="real">0.005994602 0.0071174409999999995 0.100910537 0.004365435 0.001517845 0.006928126 0.078520575 0.43309236799999995 0.014285117 0.0240974 0.00983218 0.313338374</Array>
+			</VectorInstance>
+			<VectorInstance id="93">
+				<Array type="real">0.016467566 0.010639602 0.149662488 0.01031048 0.003705936 0.011638933999999998 0.025161392 0.28782413 0.034606412999999996 0.009832553 0.010314108 0.429836399</Array>
+			</VectorInstance>
+			<VectorInstance id="94">
+				<Array type="real">0.007499045 0.0057069040000000005 0.111628467 0.008363647 0.001992064 0.013173752 0.036528745 0.38187269100000004 0.023692056 0.019864602 0.017566306 0.372111721</Array>
+			</VectorInstance>
+			<VectorInstance id="95">
+				<Array type="real">0.002589912 0.001506631 0.083624385 0.001439688 4.83719E-4 0.0018765610000000001 0.056366385 0.510952228 0.06804684400000001 0.010532406999999999 0.004203236 0.258378004</Array>
+			</VectorInstance>
+			<VectorInstance id="96">
+				<Array type="real">0.007897564000000001 0.010596831999999999 0.135305337 0.006280234 0.004647414 0.0130519 0.08900307800000001 0.450799354 0.008146346 0.032016442 0.011748823 0.230506679</Array>
+			</VectorInstance>
+			<VectorInstance id="97">
+				<Array type="real">0.017699534 0.011703483999999998 0.153000046 0.020651585 0.001714199 0.01159846 0.062966152 0.333536514 0.047191882000000004 0.055260757 0.057860569 0.22681681899999998</Array>
+			</VectorInstance>
+			<VectorInstance id="98">
+				<Array type="real">0.007026887 0.002305545 0.093513531 0.002039532 0.003677764 0.007067854 0.074800643 0.530192751 0.035968631 0.015725287 0.005235129 0.222446445</Array>
+			</VectorInstance>
+			<VectorInstance id="99">
+				<Array type="real">0.009874055999999999 0.004228759 0.219163109 0.004647115 0.001924647 0.008952599 0.060806520999999995 0.291558557 0.008867512 0.017038751 0.007204746 0.365733629</Array>
+			</VectorInstance>
+		</VectorDictionary>
+		<SupportVectorMachine targetCategory="am" alternateTargetCategory="a">
+			<SupportVectors>
+				<SupportVector vectorId="0"/>
+				<SupportVector vectorId="1"/>
+				<SupportVector vectorId="2"/>
+				<SupportVector vectorId="3"/>
+				<SupportVector vectorId="4"/>
+				<SupportVector vectorId="5"/>
+				<SupportVector vectorId="6"/>
+				<SupportVector vectorId="7"/>
+				<SupportVector vectorId="8"/>
+				<SupportVector vectorId="9"/>
+				<SupportVector vectorId="10"/>
+				<SupportVector vectorId="11"/>
+				<SupportVector vectorId="12"/>
+				<SupportVector vectorId="13"/>
+				<SupportVector vectorId="14"/>
+				<SupportVector vectorId="16"/>
+				<SupportVector vectorId="17"/>
+				<SupportVector vectorId="18"/>
+				<SupportVector vectorId="19"/>
+			</SupportVectors>
+			<Coefficients absoluteValue="-0.38368441847906054">
+				<Coefficient value="78.82855372807765"/>
+				<Coefficient value="78.82855372807765"/>
+				<Coefficient value="78.82855372807765"/>
+				<Coefficient value="78.82855372807765"/>
+				<Coefficient value="0.0"/>
+				<Coefficient value="0.0"/>
+				<Coefficient value="0.0"/>
+				<Coefficient value="0.0"/>
+				<Coefficient value="78.82855372807765"/>
+				<Coefficient value="0.0"/>
+				<Coefficient value="-0.0"/>
+				<Coefficient value="-26.38883743629473"/>
+				<Coefficient value="-78.82855372807765"/>
+				<Coefficient value="-78.82855372807765"/>
+				<Coefficient value="-78.82855372807765"/>
+				<Coefficient value="-78.82855372807765"/>
+				<Coefficient value="-0.0"/>
+				<Coefficient value="-52.439716291782915"/>
+				<Coefficient value="-0.0"/>
+			</Coefficients>
+		</SupportVectorMachine>
+		<SupportVectorMachine targetCategory="bm" alternateTargetCategory="a">
+			<SupportVectors>
+				<SupportVector vectorId="0"/>
+				<SupportVector vectorId="1"/>
+				<SupportVector vectorId="2"/>
+				<SupportVector vectorId="3"/>
+				<SupportVector vectorId="4"/>
+				<SupportVector vectorId="5"/>
+				<SupportVector vectorId="6"/>
+				<SupportVector vectorId="7"/>
+				<SupportVector vectorId="8"/>
+				<SupportVector vectorId="9"/>
+				<SupportVector vectorId="20"/>
+				<SupportVector vectorId="22"/>
+				<SupportVector vectorId="23"/>
+				<SupportVector vectorId="25"/>
+				<SupportVector vectorId="26"/>
+				<SupportVector vectorId="27"/>
+				<SupportVector vectorId="28"/>
+				<SupportVector vectorId="29"/>
+			</SupportVectors>
+			<Coefficients absoluteValue="-0.001180674964859964">
+				<Coefficient value="0.0"/>
+				<Coefficient value="0.0"/>
+				<Coefficient value="4.6572921552476565"/>
+				<Coefficient value="0.0"/>
+				<Coefficient value="4.6572921552476565"/>
+				<Coefficient value="0.0"/>
+				<Coefficient value="0.0"/>
+				<Coefficient value="4.6572921552476565"/>
+				<Coefficient value="4.6572921552476565"/>
+				<Coefficient value="4.6572921552476565"/>
+				<Coefficient value="-3.5543066044769946"/>
+				<Coefficient value="-0.0"/>
+				<Coefficient value="-4.6572921552476565"/>
+				<Coefficient value="-4.6572921552476565"/>
+				<Coefficient value="-1.102985550770662"/>
+				<Coefficient value="-4.6572921552476565"/>
+				<Coefficient value="-0.0"/>
+				<Coefficient value="-4.6572921552476565"/>
+			</Coefficients>
+		</SupportVectorMachine>
+		<SupportVectorMachine targetCategory="c" alternateTargetCategory="a">
+			<SupportVectors>
+				<SupportVector vectorId="0"/>
+				<SupportVector vectorId="1"/>
+				<SupportVector vectorId="2"/>
+				<SupportVector vectorId="3"/>
+				<SupportVector vectorId="4"/>
+				<SupportVector vectorId="5"/>
+				<SupportVector vectorId="6"/>
+				<SupportVector vectorId="7"/>
+				<SupportVector vectorId="8"/>
+				<SupportVector vectorId="9"/>
+				<SupportVector vectorId="30"/>
+				<SupportVector vectorId="32"/>
+				<SupportVector vectorId="33"/>
+				<SupportVector vectorId="35"/>
+				<SupportVector vectorId="36"/>
+				<SupportVector vectorId="37"/>
+				<SupportVector vectorId="38"/>
+				<SupportVector vectorId="39"/>
+			</SupportVectors>
+			<Coefficients absoluteValue="-0.04767218676438269">
+				<Coefficient value="0.0"/>
+				<Coefficient value="0.0"/>
+				<Coefficient value="5.534160598929846"/>
+				<Coefficient value="5.534160598929846"/>
+				<Coefficient value="5.534160598929846"/>
+				<Coefficient value="0.0"/>
+				<Coefficient value="0.0"/>
+				<Coefficient value="5.534160598929846"/>
+				<Coefficient value="0.0"/>
+				<Coefficient value="5.534160598929846"/>
+				<Coefficient value="-0.0"/>
+				<Coefficient value="-5.534160598929846"/>
+				<Coefficient value="-5.534160598929846"/>
+				<Coefficient value="-0.0"/>
+				<Coefficient value="-0.0"/>
+				<Coefficient value="-5.534160598929846"/>
+				<Coefficient value="-5.534160598929846"/>
+				<Coefficient value="-5.534160598929846"/>
+			</Coefficients>
+		</SupportVectorMachine>
+		<SupportVectorMachine targetCategory="d" alternateTargetCategory="a">
+			<SupportVectors>
+				<SupportVector vectorId="0"/>
+				<SupportVector vectorId="1"/>
+				<SupportVector vectorId="2"/>
+				<SupportVector vectorId="3"/>
+				<SupportVector vectorId="4"/>
+				<SupportVector vectorId="5"/>
+				<SupportVector vectorId="6"/>
+				<SupportVector vectorId="7"/>
+				<SupportVector vectorId="8"/>
+				<SupportVector vectorId="9"/>
+				<SupportVector vectorId="40"/>
+				<SupportVector vectorId="41"/>
+				<SupportVector vectorId="42"/>
+				<SupportVector vectorId="43"/>
+				<SupportVector vectorId="44"/>
+				<SupportVector vectorId="45"/>
+				<SupportVector vectorId="46"/>
+				<SupportVector vectorId="47"/>
+				<SupportVector vectorId="48"/>
+				<SupportVector vectorId="49"/>
+			</SupportVectors>
+			<Coefficients absoluteValue="0.1348379410949694">
+				<Coefficient value="25.573227432345146"/>
+				<Coefficient value="0.0"/>
+				<Coefficient value="25.573227432345146"/>
+				<Coefficient value="0.0"/>
+				<Coefficient value="25.573227432345146"/>
+				<Coefficient value="25.573227432345146"/>
+				<Coefficient value="0.0"/>
+				<Coefficient value="0.0"/>
+				<Coefficient value="25.573227432345146"/>
+				<Coefficient value="0.0"/>
+				<Coefficient value="-0.0"/>
+				<Coefficient value="-0.0"/>
+				<Coefficient value="-12.203174954809207"/>
+				<Coefficient value="-25.573227432345146"/>
+				<Coefficient value="-0.0"/>
+				<Coefficient value="-0.0"/>
+				<Coefficient value="-25.573227432345146"/>
+				<Coefficient value="-25.573227432345146"/>
+				<Coefficient value="-25.573227432345146"/>
+				<Coefficient value="-13.37005247753594"/>
+			</Coefficients>
+		</SupportVectorMachine>
+		<SupportVectorMachine targetCategory="dm" alternateTargetCategory="a">
+			<SupportVectors>
+				<SupportVector vectorId="0"/>
+				<SupportVector vectorId="1"/>
+				<SupportVector vectorId="2"/>
+				<SupportVector vectorId="3"/>
+				<SupportVector vectorId="4"/>
+				<SupportVector vectorId="5"/>
+				<SupportVector vectorId="6"/>
+				<SupportVector vectorId="7"/>
+				<SupportVector vectorId="8"/>
+				<SupportVector vectorId="9"/>
+				<SupportVector vectorId="50"/>
+				<SupportVector vectorId="51"/>
+				<SupportVector vectorId="52"/>
+				<SupportVector vectorId="53"/>
+				<SupportVector vectorId="54"/>
+				<SupportVector vectorId="56"/>
+				<SupportVector vectorId="57"/>
+				<SupportVector vectorId="58"/>
+				<SupportVector vectorId="59"/>
+			</SupportVectors>
+			<Coefficients absoluteValue="-0.005245612430568393">
+				<Coefficient value="35.50494730705945"/>
+				<Coefficient value="0.0"/>
+				<Coefficient value="6.517153806658455"/>
+				<Coefficient value="0.0"/>
+				<Coefficient value="28.987793500400997"/>
+				<Coefficient value="35.50494730705945"/>
+				<Coefficient value="35.50494730705945"/>
+				<Coefficient value="0.0"/>
+				<Coefficient value="35.50494730705945"/>
+				<Coefficient value="0.0"/>
+				<Coefficient value="-0.0"/>
+				<Coefficient value="-0.0"/>
+				<Coefficient value="-35.50494730705945"/>
+				<Coefficient value="-35.50494730705945"/>
+				<Coefficient value="-0.0"/>
+				<Coefficient value="-35.50494730705945"/>
+				<Coefficient value="-0.0"/>
+				<Coefficient value="-35.50494730705945"/>
+				<Coefficient value="-35.50494730705945"/>
+			</Coefficients>
+		</SupportVectorMachine>
+		<SupportVectorMachine targetCategory="e" alternateTargetCategory="a">
+			<SupportVectors>
+				<SupportVector vectorId="0"/>
+				<SupportVector vectorId="1"/>
+				<SupportVector vectorId="2"/>
+				<SupportVector vectorId="3"/>
+				<SupportVector vectorId="4"/>
+				<SupportVector vectorId="5"/>
+				<SupportVector vectorId="6"/>
+				<SupportVector vectorId="7"/>
+				<SupportVector vectorId="8"/>
+				<SupportVector vectorId="9"/>
+				<SupportVector vectorId="60"/>
+				<SupportVector vectorId="61"/>
+				<SupportVector vectorId="62"/>
+				<SupportVector vectorId="63"/>
+				<SupportVector vectorId="64"/>
+				<SupportVector vectorId="65"/>
+				<SupportVector vectorId="66"/>
+				<SupportVector vectorId="67"/>
+				<SupportVector vectorId="68"/>
+				<SupportVector vectorId="69"/>
+			</SupportVectors>
+			<Coefficients absoluteValue="-0.060017252168606275">
+				<Coefficient value="6.212374803140253"/>
+				<Coefficient value="0.0"/>
+				<Coefficient value="6.212374803140253"/>
+				<Coefficient value="0.0"/>
+				<Coefficient value="6.212374803140253"/>
+				<Coefficient value="0.0"/>
+				<Coefficient value="0.0"/>
+				<Coefficient value="6.212374803140253"/>
+				<Coefficient value="0.0"/>
+				<Coefficient value="6.212374803140253"/>
+				<Coefficient value="-0.0"/>
+				<Coefficient value="-6.212374803140253"/>
+				<Coefficient value="-4.757483629897017"/>
+				<Coefficient value="-6.212374803140253"/>
+				<Coefficient value="-0.0"/>
+				<Coefficient value="-1.4548911732432361"/>
+				<Coefficient value="-0.0"/>
+				<Coefficient value="-6.212374803140253"/>
+				<Coefficient value="-6.212374803140253"/>
+				<Coefficient value="-0.0"/>
+			</Coefficients>
+		</SupportVectorMachine>
+		<SupportVectorMachine targetCategory="em" alternateTargetCategory="a">
+			<SupportVectors>
+				<SupportVector vectorId="0"/>
+				<SupportVector vectorId="1"/>
+				<SupportVector vectorId="2"/>
+				<SupportVector vectorId="3"/>
+				<SupportVector vectorId="4"/>
+				<SupportVector vectorId="5"/>
+				<SupportVector vectorId="6"/>
+				<SupportVector vectorId="7"/>
+				<SupportVector vectorId="8"/>
+				<SupportVector vectorId="9"/>
+				<SupportVector vectorId="70"/>
+				<SupportVector vectorId="71"/>
+				<SupportVector vectorId="72"/>
+				<SupportVector vectorId="73"/>
+				<SupportVector vectorId="74"/>
+				<SupportVector vectorId="75"/>
+				<SupportVector vectorId="76"/>
+				<SupportVector vectorId="77"/>
+				<SupportVector vectorId="78"/>
+				<SupportVector vectorId="79"/>
+			</SupportVectors>
+			<Coefficients absoluteValue="0.002220502588646095">
+				<Coefficient value="0.0"/>
+				<Coefficient value="0.0"/>
+				<Coefficient value="5.501768736684466"/>
+				<Coefficient value="5.501768736684466"/>
+				<Coefficient value="5.501768736684466"/>
+				<Coefficient value="0.0"/>
+				<Coefficient value="0.0"/>
+				<Coefficient value="5.501768736684466"/>
+				<Coefficient value="0.0"/>
+				<Coefficient value="5.501768736684466"/>
+				<Coefficient value="-0.0"/>
+				<Coefficient value="-0.0"/>
+				<Coefficient value="-5.501768736684466"/>
+				<Coefficient value="-5.501768736684466"/>
+				<Coefficient value="-0.0"/>
+				<Coefficient value="-5.501768736684466"/>
+				<Coefficient value="-0.0"/>
+				<Coefficient value="-5.501768736684466"/>
+				<Coefficient value="-5.501768736684466"/>
+				<Coefficient value="-0.0"/>
+			</Coefficients>
+		</SupportVectorMachine>
+		<SupportVectorMachine targetCategory="f" alternateTargetCategory="a">
+			<SupportVectors>
+				<SupportVector vectorId="0"/>
+				<SupportVector vectorId="1"/>
+				<SupportVector vectorId="2"/>
+				<SupportVector vectorId="3"/>
+				<SupportVector vectorId="4"/>
+				<SupportVector vectorId="5"/>
+				<SupportVector vectorId="6"/>
+				<SupportVector vectorId="7"/>
+				<SupportVector vectorId="8"/>
+				<SupportVector vectorId="9"/>
+				<SupportVector vectorId="81"/>
+				<SupportVector vectorId="82"/>
+				<SupportVector vectorId="83"/>
+				<SupportVector vectorId="84"/>
+				<SupportVector vectorId="85"/>
+				<SupportVector vectorId="87"/>
+				<SupportVector vectorId="88"/>
+				<SupportVector vectorId="89"/>
+			</SupportVectors>
+			<Coefficients absoluteValue="0.11271262948565614">
+				<Coefficient value="0.0"/>
+				<Coefficient value="0.0"/>
+				<Coefficient value="8.674887978167506"/>
+				<Coefficient value="0.0"/>
+				<Coefficient value="8.674887978167506"/>
+				<Coefficient value="0.0"/>
+				<Coefficient value="0.0"/>
+				<Coefficient value="8.674887978167506"/>
+				<Coefficient value="8.674887978167506"/>
+				<Coefficient value="8.674887978167506"/>
+				<Coefficient value="-8.674887978167506"/>
+				<Coefficient value="-0.0"/>
+				<Coefficient value="-0.0"/>
+				<Coefficient value="-8.674887978167506"/>
+				<Coefficient value="-0.0"/>
+				<Coefficient value="-8.674887978167506"/>
+				<Coefficient value="-8.674887978167506"/>
+				<Coefficient value="-8.674887978167506"/>
+			</Coefficients>
+		</SupportVectorMachine>
+		<SupportVectorMachine targetCategory="g" alternateTargetCategory="a">
+			<SupportVectors>
+				<SupportVector vectorId="0"/>
+				<SupportVector vectorId="1"/>
+				<SupportVector vectorId="2"/>
+				<SupportVector vectorId="3"/>
+				<SupportVector vectorId="4"/>
+				<SupportVector vectorId="5"/>
+				<SupportVector vectorId="6"/>
+				<SupportVector vectorId="7"/>
+				<SupportVector vectorId="8"/>
+				<SupportVector vectorId="9"/>
+				<SupportVector vectorId="90"/>
+				<SupportVector vectorId="91"/>
+				<SupportVector vectorId="92"/>
+				<SupportVector vectorId="93"/>
+				<SupportVector vectorId="94"/>
+				<SupportVector vectorId="95"/>
+				<SupportVector vectorId="96"/>
+				<SupportVector vectorId="97"/>
+				<SupportVector vectorId="98"/>
+				<SupportVector vectorId="99"/>
+			</SupportVectors>
+			<Coefficients absoluteValue="-0.05260683567544781">
+				<Coefficient value="0.0"/>
+				<Coefficient value="0.0"/>
+				<Coefficient value="5.544703784615637"/>
+				<Coefficient value="0.0"/>
+				<Coefficient value="5.544703784615637"/>
+				<Coefficient value="0.0"/>
+				<Coefficient value="0.0"/>
+				<Coefficient value="5.544703784615637"/>
+				<Coefficient value="5.544703784615637"/>
+				<Coefficient value="5.544703784615637"/>
+				<Coefficient value="-5.544703784615637"/>
+				<Coefficient value="-5.544703784615637"/>
+				<Coefficient value="-0.0"/>
+				<Coefficient value="-5.544703784615637"/>
+				<Coefficient value="-0.0"/>
+				<Coefficient value="-0.0"/>
+				<Coefficient value="-5.544703784615637"/>
+				<Coefficient value="-5.544703784615637"/>
+				<Coefficient value="-0.0"/>
+				<Coefficient value="-0.0"/>
+			</Coefficients>
+		</SupportVectorMachine>
+		<SupportVectorMachine targetCategory="bm" alternateTargetCategory="am">
+			<SupportVectors>
+				<SupportVector vectorId="10"/>
+				<SupportVector vectorId="11"/>
+				<SupportVector vectorId="12"/>
+				<SupportVector vectorId="13"/>
+				<SupportVector vectorId="14"/>
+				<SupportVector vectorId="16"/>
+				<SupportVector vectorId="17"/>
+				<SupportVector vectorId="18"/>
+				<SupportVector vectorId="19"/>
+				<SupportVector vectorId="20"/>
+				<SupportVector vectorId="22"/>
+				<SupportVector vectorId="23"/>
+				<SupportVector vectorId="25"/>
+				<SupportVector vectorId="26"/>
+				<SupportVector vectorId="27"/>
+				<SupportVector vectorId="28"/>
+				<SupportVector vectorId="29"/>
+			</SupportVectors>
+			<Coefficients absoluteValue="-0.022113158638450963">
+				<Coefficient value="0.0"/>
+				<Coefficient value="4.616427114571868"/>
+				<Coefficient value="0.0"/>
+				<Coefficient value="4.616427114571868"/>
+				<Coefficient value="4.616427114571868"/>
+				<Coefficient value="4.616427114571868"/>
+				<Coefficient value="0.0"/>
+				<Coefficient value="0.0"/>
+				<Coefficient value="4.616427114571868"/>
+				<Coefficient value="-2.76059804211447"/>
+				<Coefficient value="-0.0"/>
+				<Coefficient value="-4.616427114571868"/>
+				<Coefficient value="-4.616427114571868"/>
+				<Coefficient value="-1.8558290724573983"/>
+				<Coefficient value="-4.616427114571868"/>
+				<Coefficient value="-0.0"/>
+				<Coefficient value="-4.616427114571868"/>
+			</Coefficients>
+		</SupportVectorMachine>
+		<SupportVectorMachine targetCategory="c" alternateTargetCategory="am">
+			<SupportVectors>
+				<SupportVector vectorId="10"/>
+				<SupportVector vectorId="11"/>
+				<SupportVector vectorId="12"/>
+				<SupportVector vectorId="13"/>
+				<SupportVector vectorId="14"/>
+				<SupportVector vectorId="16"/>
+				<SupportVector vectorId="17"/>
+				<SupportVector vectorId="18"/>
+				<SupportVector vectorId="19"/>
+				<SupportVector vectorId="30"/>
+				<SupportVector vectorId="32"/>
+				<SupportVector vectorId="33"/>
+				<SupportVector vectorId="35"/>
+				<SupportVector vectorId="36"/>
+				<SupportVector vectorId="37"/>
+				<SupportVector vectorId="38"/>
+				<SupportVector vectorId="39"/>
+			</SupportVectors>
+			<Coefficients absoluteValue="-0.09635082323723294">
+				<Coefficient value="0.0"/>
+				<Coefficient value="6.194915435548606"/>
+				<Coefficient value="0.0"/>
+				<Coefficient value="0.0"/>
+				<Coefficient value="6.194915435548606"/>
+				<Coefficient value="6.194915435548606"/>
+				<Coefficient value="0.0"/>
+				<Coefficient value="6.194915435548606"/>
+				<Coefficient value="6.194915435548606"/>
+				<Coefficient value="-1.4229935417118043"/>
+				<Coefficient value="-6.194915435548606"/>
+				<Coefficient value="-6.194915435548606"/>
+				<Coefficient value="-0.0"/>
+				<Coefficient value="-0.0"/>
+				<Coefficient value="-6.194915435548606"/>
+				<Coefficient value="-4.771921893836801"/>
+				<Coefficient value="-6.194915435548606"/>
+			</Coefficients>
+		</SupportVectorMachine>
+		<SupportVectorMachine targetCategory="d" alternateTargetCategory="am">
+			<SupportVectors>
+				<SupportVector vectorId="10"/>
+				<SupportVector vectorId="11"/>
+				<SupportVector vectorId="12"/>
+				<SupportVector vectorId="13"/>
+				<SupportVector vectorId="14"/>
+				<SupportVector vectorId="16"/>
+				<SupportVector vectorId="17"/>
+				<SupportVector vectorId="18"/>
+				<SupportVector vectorId="19"/>
+				<SupportVector vectorId="40"/>
+				<SupportVector vectorId="41"/>
+				<SupportVector vectorId="42"/>
+				<SupportVector vectorId="43"/>
+				<SupportVector vectorId="44"/>
+				<SupportVector vectorId="45"/>
+				<SupportVector vectorId="46"/>
+				<SupportVector vectorId="47"/>
+				<SupportVector vectorId="48"/>
+				<SupportVector vectorId="49"/>
+			</SupportVectors>
+			<Coefficients absoluteValue="0.1402183445731394">
+				<Coefficient value="27.0597530266832"/>
+				<Coefficient value="0.0"/>
+				<Coefficient value="0.0"/>
+				<Coefficient value="27.0597530266832"/>
+				<Coefficient value="27.0597530266832"/>
+				<Coefficient value="27.0597530266832"/>
+				<Coefficient value="0.0"/>
+				<Coefficient value="27.0597530266832"/>
+				<Coefficient value="0.0"/>
+				<Coefficient value="-0.0"/>
+				<Coefficient value="-0.0"/>
+				<Coefficient value="-0.0"/>
+				<Coefficient value="-27.0597530266832"/>
+				<Coefficient value="-0.0"/>
+				<Coefficient value="-0.0"/>
+				<Coefficient value="-27.0597530266832"/>
+				<Coefficient value="-27.0597530266832"/>
+				<Coefficient value="-27.0597530266832"/>
+				<Coefficient value="-27.0597530266832"/>
+			</Coefficients>
+		</SupportVectorMachine>
+		<SupportVectorMachine targetCategory="dm" alternateTargetCategory="am">
+			<SupportVectors>
+				<SupportVector vectorId="10"/>
+				<SupportVector vectorId="11"/>
+				<SupportVector vectorId="12"/>
+				<SupportVector vectorId="13"/>
+				<SupportVector vectorId="14"/>
+				<SupportVector vectorId="16"/>
+				<SupportVector vectorId="17"/>
+				<SupportVector vectorId="18"/>
+				<SupportVector vectorId="19"/>
+				<SupportVector vectorId="50"/>
+				<SupportVector vectorId="51"/>
+				<SupportVector vectorId="52"/>
+				<SupportVector vectorId="53"/>
+				<SupportVector vectorId="54"/>
+				<SupportVector vectorId="56"/>
+				<SupportVector vectorId="57"/>
+				<SupportVector vectorId="58"/>
+				<SupportVector vectorId="59"/>
+			</SupportVectors>
+			<Coefficients absoluteValue="-0.10237742921969024">
+				<Coefficient value="45.656481377541475"/>
+				<Coefficient value="0.0"/>
+				<Coefficient value="0.0"/>
+				<Coefficient value="45.656481377541475"/>
+				<Coefficient value="0.0"/>
+				<Coefficient value="45.656481377541475"/>
+				<Coefficient value="45.656481377541475"/>
+				<Coefficient value="45.656481377541475"/>
+				<Coefficient value="0.0"/>
+				<Coefficient value="-45.656481377541475"/>
+				<Coefficient value="-0.0"/>
+				<Coefficient value="-45.656481377541475"/>
+				<Coefficient value="-0.0"/>
+				<Coefficient value="-0.0"/>
+				<Coefficient value="-45.656481377541475"/>
+				<Coefficient value="-0.0"/>
+				<Coefficient value="-45.656481377541475"/>
+				<Coefficient value="-45.656481377541475"/>
+			</Coefficients>
+		</SupportVectorMachine>
+		<SupportVectorMachine targetCategory="e" alternateTargetCategory="am">
+			<SupportVectors>
+				<SupportVector vectorId="10"/>
+				<SupportVector vectorId="11"/>
+				<SupportVector vectorId="12"/>
+				<SupportVector vectorId="13"/>
+				<SupportVector vectorId="14"/>
+				<SupportVector vectorId="16"/>
+				<SupportVector vectorId="17"/>
+				<SupportVector vectorId="18"/>
+				<SupportVector vectorId="19"/>
+				<SupportVector vectorId="60"/>
+				<SupportVector vectorId="61"/>
+				<SupportVector vectorId="62"/>
+				<SupportVector vectorId="63"/>
+				<SupportVector vectorId="64"/>
+				<SupportVector vectorId="65"/>
+				<SupportVector vectorId="66"/>
+				<SupportVector vectorId="67"/>
+				<SupportVector vectorId="68"/>
+				<SupportVector vectorId="69"/>
+			</SupportVectors>
+			<Coefficients absoluteValue="-0.06940733828156301">
+				<Coefficient value="0.0"/>
+				<Coefficient value="5.996353697751495"/>
+				<Coefficient value="0.0"/>
+				<Coefficient value="5.996353697751495"/>
+				<Coefficient value="5.996353697751495"/>
+				<Coefficient value="5.996353697751495"/>
+				<Coefficient value="0.0"/>
+				<Coefficient value="0.0"/>
+				<Coefficient value="5.996353697751495"/>
+				<Coefficient value="-0.0"/>
+				<Coefficient value="-5.996353697751495"/>
+				<Coefficient value="-0.0"/>
+				<Coefficient value="-5.996353697751495"/>
+				<Coefficient value="-0.0"/>
+				<Coefficient value="-5.996353697751495"/>
+				<Coefficient value="-0.0"/>
+				<Coefficient value="-5.996353697751495"/>
+				<Coefficient value="-5.996353697751495"/>
+				<Coefficient value="-0.0"/>
+			</Coefficients>
+		</SupportVectorMachine>
+		<SupportVectorMachine targetCategory="em" alternateTargetCategory="am">
+			<SupportVectors>
+				<SupportVector vectorId="10"/>
+				<SupportVector vectorId="11"/>
+				<SupportVector vectorId="12"/>
+				<SupportVector vectorId="13"/>
+				<SupportVector vectorId="14"/>
+				<SupportVector vectorId="16"/>
+				<SupportVector vectorId="17"/>
+				<SupportVector vectorId="18"/>
+				<SupportVector vectorId="19"/>
+				<SupportVector vectorId="70"/>
+				<SupportVector vectorId="71"/>
+				<SupportVector vectorId="72"/>
+				<SupportVector vectorId="73"/>
+				<SupportVector vectorId="74"/>
+				<SupportVector vectorId="75"/>
+				<SupportVector vectorId="76"/>
+				<SupportVector vectorId="77"/>
+				<SupportVector vectorId="78"/>
+				<SupportVector vectorId="79"/>
+			</SupportVectors>
+			<Coefficients absoluteValue="-0.06450512949504475">
+				<Coefficient value="0.0"/>
+				<Coefficient value="5.70991572075134"/>
+				<Coefficient value="0.0"/>
+				<Coefficient value="5.70991572075134"/>
+				<Coefficient value="5.70991572075134"/>
+				<Coefficient value="5.70991572075134"/>
+				<Coefficient value="0.0"/>
+				<Coefficient value="0.0"/>
+				<Coefficient value="5.70991572075134"/>
+				<Coefficient value="-5.364492028038981"/>
+				<Coefficient value="-0.0"/>
+				<Coefficient value="-5.70991572075134"/>
+				<Coefficient value="-0.0"/>
+				<Coefficient value="-0.3454236927123586"/>
+				<Coefficient value="-5.70991572075134"/>
+				<Coefficient value="-0.0"/>
+				<Coefficient value="-5.70991572075134"/>
+				<Coefficient value="-5.70991572075134"/>
+				<Coefficient value="-0.0"/>
+			</Coefficients>
+		</SupportVectorMachine>
+		<SupportVectorMachine targetCategory="f" alternateTargetCategory="am">
+			<SupportVectors>
+				<SupportVector vectorId="10"/>
+				<SupportVector vectorId="11"/>
+				<SupportVector vectorId="12"/>
+				<SupportVector vectorId="13"/>
+				<SupportVector vectorId="14"/>
+				<SupportVector vectorId="16"/>
+				<SupportVector vectorId="17"/>
+				<SupportVector vectorId="18"/>
+				<SupportVector vectorId="19"/>
+				<SupportVector vectorId="81"/>
+				<SupportVector vectorId="82"/>
+				<SupportVector vectorId="83"/>
+				<SupportVector vectorId="84"/>
+				<SupportVector vectorId="85"/>
+				<SupportVector vectorId="87"/>
+				<SupportVector vectorId="88"/>
+				<SupportVector vectorId="89"/>
+			</SupportVectors>
+			<Coefficients absoluteValue="0.14084889602475803">
+				<Coefficient value="9.302233083687584"/>
+				<Coefficient value="4.018754699611998"/>
+				<Coefficient value="0.0"/>
+				<Coefficient value="0.0"/>
+				<Coefficient value="9.302233083687584"/>
+				<Coefficient value="9.302233083687584"/>
+				<Coefficient value="0.0"/>
+				<Coefficient value="5.283478384075586"/>
+				<Coefficient value="9.302233083687584"/>
+				<Coefficient value="-9.302233083687584"/>
+				<Coefficient value="-0.0"/>
+				<Coefficient value="-0.0"/>
+				<Coefficient value="-9.302233083687584"/>
+				<Coefficient value="-0.0"/>
+				<Coefficient value="-9.302233083687584"/>
+				<Coefficient value="-9.302233083687584"/>
+				<Coefficient value="-9.302233083687584"/>
+			</Coefficients>
+		</SupportVectorMachine>
+		<SupportVectorMachine targetCategory="g" alternateTargetCategory="am">
+			<SupportVectors>
+				<SupportVector vectorId="10"/>
+				<SupportVector vectorId="11"/>
+				<SupportVector vectorId="12"/>
+				<SupportVector vectorId="13"/>
+				<SupportVector vectorId="14"/>
+				<SupportVector vectorId="16"/>
+				<SupportVector vectorId="17"/>
+				<SupportVector vectorId="18"/>
+				<SupportVector vectorId="19"/>
+				<SupportVector vectorId="90"/>
+				<SupportVector vectorId="91"/>
+				<SupportVector vectorId="92"/>
+				<SupportVector vectorId="93"/>
+				<SupportVector vectorId="94"/>
+				<SupportVector vectorId="95"/>
+				<SupportVector vectorId="96"/>
+				<SupportVector vectorId="97"/>
+				<SupportVector vectorId="98"/>
+				<SupportVector vectorId="99"/>
+			</SupportVectors>
+			<Coefficients absoluteValue="-0.07164488326512655">
+				<Coefficient value="0.0"/>
+				<Coefficient value="5.638547920360611"/>
+				<Coefficient value="0.0"/>
+				<Coefficient value="5.638547920360611"/>
+				<Coefficient value="5.638547920360611"/>
+				<Coefficient value="5.638547920360611"/>
+				<Coefficient value="0.0"/>
+				<Coefficient value="0.0"/>
+				<Coefficient value="5.638547920360611"/>
+				<Coefficient value="-5.638547920360611"/>
+				<Coefficient value="-5.638547920360611"/>
+				<Coefficient value="-0.0"/>
+				<Coefficient value="-5.638547920360611"/>
+				<Coefficient value="-0.0"/>
+				<Coefficient value="-0.0"/>
+				<Coefficient value="-5.638547920360611"/>
+				<Coefficient value="-5.638547920360611"/>
+				<Coefficient value="-0.0"/>
+				<Coefficient value="-0.0"/>
+			</Coefficients>
+		</SupportVectorMachine>
+		<SupportVectorMachine targetCategory="c" alternateTargetCategory="bm">
+			<SupportVectors>
+				<SupportVector vectorId="20"/>
+				<SupportVector vectorId="22"/>
+				<SupportVector vectorId="23"/>
+				<SupportVector vectorId="25"/>
+				<SupportVector vectorId="26"/>
+				<SupportVector vectorId="27"/>
+				<SupportVector vectorId="28"/>
+				<SupportVector vectorId="29"/>
+				<SupportVector vectorId="30"/>
+				<SupportVector vectorId="32"/>
+				<SupportVector vectorId="33"/>
+				<SupportVector vectorId="35"/>
+				<SupportVector vectorId="36"/>
+				<SupportVector vectorId="37"/>
+				<SupportVector vectorId="38"/>
+				<SupportVector vectorId="39"/>
+			</SupportVectors>
+			<Coefficients absoluteValue="0.006755509540313988">
+				<Coefficient value="4.6135915228375275"/>
+				<Coefficient value="0.0"/>
+				<Coefficient value="0.0"/>
+				<Coefficient value="4.6135915228375275"/>
+				<Coefficient value="4.6135915228375275"/>
+				<Coefficient value="4.6135915228375275"/>
+				<Coefficient value="0.0"/>
+				<Coefficient value="4.6135915228375275"/>
+				<Coefficient value="-0.0"/>
+				<Coefficient value="-4.6135915228375275"/>
+				<Coefficient value="-4.6135915228375275"/>
+				<Coefficient value="-0.0"/>
+				<Coefficient value="-0.0"/>
+				<Coefficient value="-4.6135915228375275"/>
+				<Coefficient value="-4.6135915228375275"/>
+				<Coefficient value="-4.6135915228375275"/>
+			</Coefficients>
+		</SupportVectorMachine>
+		<SupportVectorMachine targetCategory="d" alternateTargetCategory="bm">
+			<SupportVectors>
+				<SupportVector vectorId="20"/>
+				<SupportVector vectorId="22"/>
+				<SupportVector vectorId="23"/>
+				<SupportVector vectorId="25"/>
+				<SupportVector vectorId="26"/>
+				<SupportVector vectorId="27"/>
+				<SupportVector vectorId="28"/>
+				<SupportVector vectorId="29"/>
+				<SupportVector vectorId="40"/>
+				<SupportVector vectorId="41"/>
+				<SupportVector vectorId="42"/>
+				<SupportVector vectorId="43"/>
+				<SupportVector vectorId="44"/>
+				<SupportVector vectorId="45"/>
+				<SupportVector vectorId="46"/>
+				<SupportVector vectorId="47"/>
+				<SupportVector vectorId="48"/>
+				<SupportVector vectorId="49"/>
+			</SupportVectors>
+			<Coefficients absoluteValue="-0.04063543678978873">
+				<Coefficient value="6.5761502872251585"/>
+				<Coefficient value="0.0"/>
+				<Coefficient value="6.5761502872251585"/>
+				<Coefficient value="6.5761502872251585"/>
+				<Coefficient value="0.0"/>
+				<Coefficient value="6.5761502872251585"/>
+				<Coefficient value="0.0"/>
+				<Coefficient value="6.5761502872251585"/>
+				<Coefficient value="-6.5761502872251585"/>
+				<Coefficient value="-6.5761502872251585"/>
+				<Coefficient value="-0.0"/>
+				<Coefficient value="-6.5761502872251585"/>
+				<Coefficient value="-0.0"/>
+				<Coefficient value="-6.5761502872251585"/>
+				<Coefficient value="-0.0"/>
+				<Coefficient value="-0.0"/>
+				<Coefficient value="-6.5761502872251585"/>
+				<Coefficient value="-0.0"/>
+			</Coefficients>
+		</SupportVectorMachine>
+		<SupportVectorMachine targetCategory="dm" alternateTargetCategory="bm">
+			<SupportVectors>
+				<SupportVector vectorId="20"/>
+				<SupportVector vectorId="22"/>
+				<SupportVector vectorId="23"/>
+				<SupportVector vectorId="25"/>
+				<SupportVector vectorId="26"/>
+				<SupportVector vectorId="27"/>
+				<SupportVector vectorId="28"/>
+				<SupportVector vectorId="29"/>
+				<SupportVector vectorId="50"/>
+				<SupportVector vectorId="51"/>
+				<SupportVector vectorId="52"/>
+				<SupportVector vectorId="53"/>
+				<SupportVector vectorId="54"/>
+				<SupportVector vectorId="56"/>
+				<SupportVector vectorId="57"/>
+				<SupportVector vectorId="58"/>
+				<SupportVector vectorId="59"/>
+			</SupportVectors>
+			<Coefficients absoluteValue="-0.0029253880622443404">
+				<Coefficient value="4.625158309767209"/>
+				<Coefficient value="0.0"/>
+				<Coefficient value="4.625158309767209"/>
+				<Coefficient value="4.625158309767209"/>
+				<Coefficient value="0.0"/>
+				<Coefficient value="4.625158309767209"/>
+				<Coefficient value="0.0"/>
+				<Coefficient value="4.625158309767209"/>
+				<Coefficient value="-0.0"/>
+				<Coefficient value="-0.0"/>
+				<Coefficient value="-4.625158309767209"/>
+				<Coefficient value="-4.625158309767209"/>
+				<Coefficient value="-4.625158309767209"/>
+				<Coefficient value="-4.625158309767209"/>
+				<Coefficient value="-0.0"/>
+				<Coefficient value="-0.0"/>
+				<Coefficient value="-4.625158309767209"/>
+			</Coefficients>
+		</SupportVectorMachine>
+		<SupportVectorMachine targetCategory="e" alternateTargetCategory="bm">
+			<SupportVectors>
+				<SupportVector vectorId="20"/>
+				<SupportVector vectorId="22"/>
+				<SupportVector vectorId="23"/>
+				<SupportVector vectorId="25"/>
+				<SupportVector vectorId="26"/>
+				<SupportVector vectorId="27"/>
+				<SupportVector vectorId="28"/>
+				<SupportVector vectorId="29"/>
+				<SupportVector vectorId="60"/>
+				<SupportVector vectorId="61"/>
+				<SupportVector vectorId="62"/>
+				<SupportVector vectorId="63"/>
+				<SupportVector vectorId="64"/>
+				<SupportVector vectorId="65"/>
+				<SupportVector vectorId="66"/>
+				<SupportVector vectorId="67"/>
+				<SupportVector vectorId="68"/>
+				<SupportVector vectorId="69"/>
+			</SupportVectors>
+			<Coefficients absoluteValue="-0.0822275694751647">
+				<Coefficient value="0.0"/>
+				<Coefficient value="13.312582994280907"/>
+				<Coefficient value="13.312582994280907"/>
+				<Coefficient value="0.0"/>
+				<Coefficient value="13.312582994280907"/>
+				<Coefficient value="13.312582994280907"/>
+				<Coefficient value="13.312582994280907"/>
+				<Coefficient value="0.0"/>
+				<Coefficient value="-13.312582994280907"/>
+				<Coefficient value="-13.312582994280907"/>
+				<Coefficient value="-0.0"/>
+				<Coefficient value="-0.0"/>
+				<Coefficient value="-13.312582994280907"/>
+				<Coefficient value="-0.0"/>
+				<Coefficient value="-13.312582994280907"/>
+				<Coefficient value="-13.312582994280907"/>
+				<Coefficient value="-0.0"/>
+				<Coefficient value="-0.0"/>
+			</Coefficients>
+		</SupportVectorMachine>
+		<SupportVectorMachine targetCategory="em" alternateTargetCategory="bm">
+			<SupportVectors>
+				<SupportVector vectorId="20"/>
+				<SupportVector vectorId="22"/>
+				<SupportVector vectorId="23"/>
+				<SupportVector vectorId="25"/>
+				<SupportVector vectorId="26"/>
+				<SupportVector vectorId="27"/>
+				<SupportVector vectorId="28"/>
+				<SupportVector vectorId="29"/>
+				<SupportVector vectorId="70"/>
+				<SupportVector vectorId="71"/>
+				<SupportVector vectorId="72"/>
+				<SupportVector vectorId="73"/>
+				<SupportVector vectorId="74"/>
+				<SupportVector vectorId="75"/>
+				<SupportVector vectorId="76"/>
+				<SupportVector vectorId="77"/>
+				<SupportVector vectorId="78"/>
+				<SupportVector vectorId="79"/>
+			</SupportVectors>
+			<Coefficients absoluteValue="0.14493829271359118">
+				<Coefficient value="0.0"/>
+				<Coefficient value="10.818138595372648"/>
+				<Coefficient value="2.4047690155863655"/>
+				<Coefficient value="8.413369579786284"/>
+				<Coefficient value="10.818138595372648"/>
+				<Coefficient value="10.818138595372648"/>
+				<Coefficient value="10.818138595372648"/>
+				<Coefficient value="0.0"/>
+				<Coefficient value="-10.818138595372648"/>
+				<Coefficient value="-0.0"/>
+				<Coefficient value="-10.818138595372648"/>
+				<Coefficient value="-10.818138595372648"/>
+				<Coefficient value="-0.0"/>
+				<Coefficient value="-10.818138595372648"/>
+				<Coefficient value="-0.0"/>
+				<Coefficient value="-10.818138595372648"/>
+				<Coefficient value="-0.0"/>
+				<Coefficient value="-0.0"/>
+			</Coefficients>
+		</SupportVectorMachine>
+		<SupportVectorMachine targetCategory="f" alternateTargetCategory="bm">
+			<SupportVectors>
+				<SupportVector vectorId="20"/>
+				<SupportVector vectorId="22"/>
+				<SupportVector vectorId="23"/>
+				<SupportVector vectorId="25"/>
+				<SupportVector vectorId="26"/>
+				<SupportVector vectorId="27"/>
+				<SupportVector vectorId="28"/>
+				<SupportVector vectorId="29"/>
+				<SupportVector vectorId="81"/>
+				<SupportVector vectorId="82"/>
+				<SupportVector vectorId="83"/>
+				<SupportVector vectorId="84"/>
+				<SupportVector vectorId="85"/>
+				<SupportVector vectorId="87"/>
+				<SupportVector vectorId="88"/>
+				<SupportVector vectorId="89"/>
+			</SupportVectors>
+			<Coefficients absoluteValue="-0.01211806470087675">
+				<Coefficient value="4.235089693414245"/>
+				<Coefficient value="0.0"/>
+				<Coefficient value="4.620721513964967"/>
+				<Coefficient value="4.620721513964967"/>
+				<Coefficient value="0.3856318205507224"/>
+				<Coefficient value="4.620721513964967"/>
+				<Coefficient value="0.0"/>
+				<Coefficient value="4.620721513964967"/>
+				<Coefficient value="-4.620721513964967"/>
+				<Coefficient value="-2.219668205866574"/>
+				<Coefficient value="-0.0"/>
+				<Coefficient value="-4.620721513964967"/>
+				<Coefficient value="-0.0"/>
+				<Coefficient value="-4.620721513964967"/>
+				<Coefficient value="-2.401053308098393"/>
+				<Coefficient value="-4.620721513964967"/>
+			</Coefficients>
+		</SupportVectorMachine>
+		<SupportVectorMachine targetCategory="g" alternateTargetCategory="bm">
+			<SupportVectors>
+				<SupportVector vectorId="20"/>
+				<SupportVector vectorId="22"/>
+				<SupportVector vectorId="23"/>
+				<SupportVector vectorId="25"/>
+				<SupportVector vectorId="26"/>
+				<SupportVector vectorId="27"/>
+				<SupportVector vectorId="28"/>
+				<SupportVector vectorId="29"/>
+				<SupportVector vectorId="90"/>
+				<SupportVector vectorId="91"/>
+				<SupportVector vectorId="92"/>
+				<SupportVector vectorId="93"/>
+				<SupportVector vectorId="94"/>
+				<SupportVector vectorId="95"/>
+				<SupportVector vectorId="96"/>
+				<SupportVector vectorId="97"/>
+				<SupportVector vectorId="98"/>
+				<SupportVector vectorId="99"/>
+			</SupportVectors>
+			<Coefficients absoluteValue="0.03168502706989838">
+				<Coefficient value="0.0"/>
+				<Coefficient value="3.8323658223134154"/>
+				<Coefficient value="0.0"/>
+				<Coefficient value="11.043302844315615"/>
+				<Coefficient value="11.043302844315615"/>
+				<Coefficient value="11.043302844315615"/>
+				<Coefficient value="11.043302844315615"/>
+				<Coefficient value="7.2109370220021995"/>
+				<Coefficient value="-6.529692318798521"/>
+				<Coefficient value="-0.0"/>
+				<Coefficient value="-4.513610525517095"/>
+				<Coefficient value="-11.043302844315615"/>
+				<Coefficient value="-11.043302844315615"/>
+				<Coefficient value="-0.0"/>
+				<Coefficient value="-0.0"/>
+				<Coefficient value="-11.043302844315615"/>
+				<Coefficient value="-0.0"/>
+				<Coefficient value="-11.043302844315615"/>
+			</Coefficients>
+		</SupportVectorMachine>
+		<SupportVectorMachine targetCategory="d" alternateTargetCategory="c">
+			<SupportVectors>
+				<SupportVector vectorId="30"/>
+				<SupportVector vectorId="32"/>
+				<SupportVector vectorId="33"/>
+				<SupportVector vectorId="35"/>
+				<SupportVector vectorId="36"/>
+				<SupportVector vectorId="37"/>
+				<SupportVector vectorId="38"/>
+				<SupportVector vectorId="39"/>
+				<SupportVector vectorId="40"/>
+				<SupportVector vectorId="41"/>
+				<SupportVector vectorId="42"/>
+				<SupportVector vectorId="43"/>
+				<SupportVector vectorId="44"/>
+				<SupportVector vectorId="45"/>
+				<SupportVector vectorId="46"/>
+				<SupportVector vectorId="47"/>
+				<SupportVector vectorId="48"/>
+				<SupportVector vectorId="49"/>
+			</SupportVectors>
+			<Coefficients absoluteValue="0.04273635243462246">
+				<Coefficient value="0.0"/>
+				<Coefficient value="5.803282598358052"/>
+				<Coefficient value="5.803282598358052"/>
+				<Coefficient value="0.0"/>
+				<Coefficient value="0.0"/>
+				<Coefficient value="5.803282598358052"/>
+				<Coefficient value="5.803282598358052"/>
+				<Coefficient value="5.803282598358052"/>
+				<Coefficient value="-5.803282598358052"/>
+				<Coefficient value="-0.0"/>
+				<Coefficient value="-5.803282598358052"/>
+				<Coefficient value="-5.803282598358052"/>
+				<Coefficient value="-0.0"/>
+				<Coefficient value="-5.803282598358052"/>
+				<Coefficient value="-0.0"/>
+				<Coefficient value="-0.0"/>
+				<Coefficient value="-5.803282598358052"/>
+				<Coefficient value="-0.0"/>
+			</Coefficients>
+		</SupportVectorMachine>
+		<SupportVectorMachine targetCategory="dm" alternateTargetCategory="c">
+			<SupportVectors>
+				<SupportVector vectorId="30"/>
+				<SupportVector vectorId="32"/>
+				<SupportVector vectorId="33"/>
+				<SupportVector vectorId="35"/>
+				<SupportVector vectorId="36"/>
+				<SupportVector vectorId="37"/>
+				<SupportVector vectorId="38"/>
+				<SupportVector vectorId="39"/>
+				<SupportVector vectorId="50"/>
+				<SupportVector vectorId="51"/>
+				<SupportVector vectorId="52"/>
+				<SupportVector vectorId="53"/>
+				<SupportVector vectorId="54"/>
+				<SupportVector vectorId="56"/>
+				<SupportVector vectorId="57"/>
+				<SupportVector vectorId="58"/>
+				<SupportVector vectorId="59"/>
+			</SupportVectors>
+			<Coefficients absoluteValue="0.054687912767332716">
+				<Coefficient value="0.0"/>
+				<Coefficient value="5.0292828223215205"/>
+				<Coefficient value="5.0292828223215205"/>
+				<Coefficient value="0.0"/>
+				<Coefficient value="0.0"/>
+				<Coefficient value="5.0292828223215205"/>
+				<Coefficient value="5.0292828223215205"/>
+				<Coefficient value="5.0292828223215205"/>
+				<Coefficient value="-0.0"/>
+				<Coefficient value="-0.0"/>
+				<Coefficient value="-5.0292828223215205"/>
+				<Coefficient value="-5.0292828223215205"/>
+				<Coefficient value="-5.0292828223215205"/>
+				<Coefficient value="-5.0292828223215205"/>
+				<Coefficient value="-0.0"/>
+				<Coefficient value="-0.0"/>
+				<Coefficient value="-5.0292828223215205"/>
+			</Coefficients>
+		</SupportVectorMachine>
+		<SupportVectorMachine targetCategory="e" alternateTargetCategory="c">
+			<SupportVectors>
+				<SupportVector vectorId="30"/>
+				<SupportVector vectorId="32"/>
+				<SupportVector vectorId="33"/>
+				<SupportVector vectorId="35"/>
+				<SupportVector vectorId="36"/>
+				<SupportVector vectorId="37"/>
+				<SupportVector vectorId="38"/>
+				<SupportVector vectorId="39"/>
+				<SupportVector vectorId="60"/>
+				<SupportVector vectorId="61"/>
+				<SupportVector vectorId="62"/>
+				<SupportVector vectorId="63"/>
+				<SupportVector vectorId="64"/>
+				<SupportVector vectorId="65"/>
+				<SupportVector vectorId="66"/>
+				<SupportVector vectorId="67"/>
+				<SupportVector vectorId="68"/>
+				<SupportVector vectorId="69"/>
+			</SupportVectors>
+			<Coefficients absoluteValue="-0.012151548783450657">
+				<Coefficient value="0.21588988867044087"/>
+				<Coefficient value="5.383445809153882"/>
+				<Coefficient value="5.383445809153882"/>
+				<Coefficient value="0.0"/>
+				<Coefficient value="0.0"/>
+				<Coefficient value="5.383445809153882"/>
+				<Coefficient value="5.167555920483441"/>
+				<Coefficient value="5.383445809153882"/>
+				<Coefficient value="-1.662219346695416"/>
+				<Coefficient value="-5.383445809153882"/>
+				<Coefficient value="-3.7212264624584654"/>
+				<Coefficient value="-5.383445809153882"/>
+				<Coefficient value="-0.0"/>
+				<Coefficient value="-0.0"/>
+				<Coefficient value="-0.0"/>
+				<Coefficient value="-5.383445809153882"/>
+				<Coefficient value="-5.383445809153882"/>
+				<Coefficient value="-0.0"/>
+			</Coefficients>
+		</SupportVectorMachine>
+		<SupportVectorMachine targetCategory="em" alternateTargetCategory="c">
+			<SupportVectors>
+				<SupportVector vectorId="30"/>
+				<SupportVector vectorId="32"/>
+				<SupportVector vectorId="33"/>
+				<SupportVector vectorId="35"/>
+				<SupportVector vectorId="36"/>
+				<SupportVector vectorId="37"/>
+				<SupportVector vectorId="38"/>
+				<SupportVector vectorId="39"/>
+				<SupportVector vectorId="70"/>
+				<SupportVector vectorId="71"/>
+				<SupportVector vectorId="72"/>
+				<SupportVector vectorId="73"/>
+				<SupportVector vectorId="74"/>
+				<SupportVector vectorId="75"/>
+				<SupportVector vectorId="76"/>
+				<SupportVector vectorId="77"/>
+				<SupportVector vectorId="78"/>
+				<SupportVector vectorId="79"/>
+			</SupportVectors>
+			<Coefficients absoluteValue="0.03820765953076368">
+				<Coefficient value="0.0"/>
+				<Coefficient value="17.060492685676138"/>
+				<Coefficient value="0.0"/>
+				<Coefficient value="17.060492685676138"/>
+				<Coefficient value="17.060492685676138"/>
+				<Coefficient value="17.060492685676138"/>
+				<Coefficient value="17.060492685676138"/>
+				<Coefficient value="0.0"/>
+				<Coefficient value="-0.0"/>
+				<Coefficient value="-0.0"/>
+				<Coefficient value="-0.0"/>
+				<Coefficient value="-0.0"/>
+				<Coefficient value="-17.060492685676138"/>
+				<Coefficient value="-17.060492685676138"/>
+				<Coefficient value="-17.060492685676138"/>
+				<Coefficient value="-0.0"/>
+				<Coefficient value="-17.060492685676138"/>
+				<Coefficient value="-17.060492685676138"/>
+			</Coefficients>
+		</SupportVectorMachine>
+		<SupportVectorMachine targetCategory="f" alternateTargetCategory="c">
+			<SupportVectors>
+				<SupportVector vectorId="30"/>
+				<SupportVector vectorId="32"/>
+				<SupportVector vectorId="33"/>
+				<SupportVector vectorId="35"/>
+				<SupportVector vectorId="36"/>
+				<SupportVector vectorId="37"/>
+				<SupportVector vectorId="38"/>
+				<SupportVector vectorId="39"/>
+				<SupportVector vectorId="81"/>
+				<SupportVector vectorId="82"/>
+				<SupportVector vectorId="83"/>
+				<SupportVector vectorId="84"/>
+				<SupportVector vectorId="85"/>
+				<SupportVector vectorId="87"/>
+				<SupportVector vectorId="88"/>
+				<SupportVector vectorId="89"/>
+			</SupportVectors>
+			<Coefficients absoluteValue="-0.01858257482162362">
+				<Coefficient value="8.199926358755707"/>
+				<Coefficient value="8.199926358755707"/>
+				<Coefficient value="8.199926358755707"/>
+				<Coefficient value="0.0"/>
+				<Coefficient value="0.0"/>
+				<Coefficient value="8.199926358755707"/>
+				<Coefficient value="0.0"/>
+				<Coefficient value="8.199926358755707"/>
+				<Coefficient value="-8.199926358755707"/>
+				<Coefficient value="-0.0"/>
+				<Coefficient value="-8.199926358755707"/>
+				<Coefficient value="-4.888385548128021"/>
+				<Coefficient value="-3.3115408106276867"/>
+				<Coefficient value="-8.199926358755707"/>
+				<Coefficient value="-0.0"/>
+				<Coefficient value="-8.199926358755707"/>
+			</Coefficients>
+		</SupportVectorMachine>
+		<SupportVectorMachine targetCategory="g" alternateTargetCategory="c">
+			<SupportVectors>
+				<SupportVector vectorId="30"/>
+				<SupportVector vectorId="32"/>
+				<SupportVector vectorId="33"/>
+				<SupportVector vectorId="35"/>
+				<SupportVector vectorId="36"/>
+				<SupportVector vectorId="37"/>
+				<SupportVector vectorId="38"/>
+				<SupportVector vectorId="39"/>
+				<SupportVector vectorId="90"/>
+				<SupportVector vectorId="91"/>
+				<SupportVector vectorId="92"/>
+				<SupportVector vectorId="93"/>
+				<SupportVector vectorId="94"/>
+				<SupportVector vectorId="95"/>
+				<SupportVector vectorId="96"/>
+				<SupportVector vectorId="97"/>
+				<SupportVector vectorId="98"/>
+				<SupportVector vectorId="99"/>
+			</SupportVectors>
+			<Coefficients absoluteValue="0.06683137879099399">
+				<Coefficient value="0.0"/>
+				<Coefficient value="16.50454442161057"/>
+				<Coefficient value="0.0"/>
+				<Coefficient value="16.50454442161057"/>
+				<Coefficient value="16.50454442161057"/>
+				<Coefficient value="16.50454442161057"/>
+				<Coefficient value="16.50454442161057"/>
+				<Coefficient value="0.0"/>
+				<Coefficient value="-0.0"/>
+				<Coefficient value="-16.50454442161057"/>
+				<Coefficient value="-0.0"/>
+				<Coefficient value="-0.0"/>
+				<Coefficient value="-0.0"/>
+				<Coefficient value="-16.50454442161057"/>
+				<Coefficient value="-16.50454442161057"/>
+				<Coefficient value="-16.50454442161057"/>
+				<Coefficient value="-16.50454442161057"/>
+				<Coefficient value="-0.0"/>
+			</Coefficients>
+		</SupportVectorMachine>
+		<SupportVectorMachine targetCategory="dm" alternateTargetCategory="d">
+			<SupportVectors>
+				<SupportVector vectorId="40"/>
+				<SupportVector vectorId="41"/>
+				<SupportVector vectorId="42"/>
+				<SupportVector vectorId="43"/>
+				<SupportVector vectorId="44"/>
+				<SupportVector vectorId="45"/>
+				<SupportVector vectorId="46"/>
+				<SupportVector vectorId="47"/>
+				<SupportVector vectorId="48"/>
+				<SupportVector vectorId="49"/>
+				<SupportVector vectorId="50"/>
+				<SupportVector vectorId="51"/>
+				<SupportVector vectorId="52"/>
+				<SupportVector vectorId="53"/>
+				<SupportVector vectorId="54"/>
+				<SupportVector vectorId="56"/>
+				<SupportVector vectorId="57"/>
+				<SupportVector vectorId="58"/>
+				<SupportVector vectorId="59"/>
+			</SupportVectors>
+			<Coefficients absoluteValue="0.7704037180759736">
+				<Coefficient value="0.0"/>
+				<Coefficient value="0.0"/>
+				<Coefficient value="0.0"/>
+				<Coefficient value="200.51996791531272"/>
+				<Coefficient value="200.51996791531272"/>
+				<Coefficient value="0.0"/>
+				<Coefficient value="200.51996791531272"/>
+				<Coefficient value="200.51996791531272"/>
+				<Coefficient value="112.32697381671969"/>
+				<Coefficient value="88.19299409859303"/>
+				<Coefficient value="-0.0"/>
+				<Coefficient value="-112.6969111643593"/>
+				<Coefficient value="-200.51996791531272"/>
+				<Coefficient value="-200.51996791531272"/>
+				<Coefficient value="-200.51996791531272"/>
+				<Coefficient value="-87.82305675095341"/>
+				<Coefficient value="-200.51996791531272"/>
+				<Coefficient value="-0.0"/>
+				<Coefficient value="-0.0"/>
+			</Coefficients>
+		</SupportVectorMachine>
+		<SupportVectorMachine targetCategory="e" alternateTargetCategory="d">
+			<SupportVectors>
+				<SupportVector vectorId="40"/>
+				<SupportVector vectorId="41"/>
+				<SupportVector vectorId="42"/>
+				<SupportVector vectorId="43"/>
+				<SupportVector vectorId="44"/>
+				<SupportVector vectorId="45"/>
+				<SupportVector vectorId="46"/>
+				<SupportVector vectorId="47"/>
+				<SupportVector vectorId="48"/>
+				<SupportVector vectorId="49"/>
+				<SupportVector vectorId="60"/>
+				<SupportVector vectorId="61"/>
+				<SupportVector vectorId="62"/>
+				<SupportVector vectorId="63"/>
+				<SupportVector vectorId="64"/>
+				<SupportVector vectorId="65"/>
+				<SupportVector vectorId="66"/>
+				<SupportVector vectorId="67"/>
+				<SupportVector vectorId="68"/>
+				<SupportVector vectorId="69"/>
+			</SupportVectors>
+			<Coefficients absoluteValue="-0.028639621420398376">
+				<Coefficient value="6.041537018536514"/>
+				<Coefficient value="0.0"/>
+				<Coefficient value="6.041537018536514"/>
+				<Coefficient value="6.041537018536514"/>
+				<Coefficient value="0.0"/>
+				<Coefficient value="0.0"/>
+				<Coefficient value="6.041537018536514"/>
+				<Coefficient value="0.0"/>
+				<Coefficient value="6.041537018536514"/>
+				<Coefficient value="0.0"/>
+				<Coefficient value="-0.0"/>
+				<Coefficient value="-6.041537018536514"/>
+				<Coefficient value="-4.431252720735842"/>
+				<Coefficient value="-6.041537018536514"/>
+				<Coefficient value="-0.0"/>
+				<Coefficient value="-1.6102842978006713"/>
+				<Coefficient value="-0.0"/>
+				<Coefficient value="-6.041537018536514"/>
+				<Coefficient value="-6.041537018536514"/>
+				<Coefficient value="-0.0"/>
+			</Coefficients>
+		</SupportVectorMachine>
+		<SupportVectorMachine targetCategory="em" alternateTargetCategory="d">
+			<SupportVectors>
+				<SupportVector vectorId="40"/>
+				<SupportVector vectorId="41"/>
+				<SupportVector vectorId="42"/>
+				<SupportVector vectorId="43"/>
+				<SupportVector vectorId="44"/>
+				<SupportVector vectorId="45"/>
+				<SupportVector vectorId="46"/>
+				<SupportVector vectorId="47"/>
+				<SupportVector vectorId="48"/>
+				<SupportVector vectorId="49"/>
+				<SupportVector vectorId="70"/>
+				<SupportVector vectorId="71"/>
+				<SupportVector vectorId="72"/>
+				<SupportVector vectorId="73"/>
+				<SupportVector vectorId="74"/>
+				<SupportVector vectorId="75"/>
+				<SupportVector vectorId="76"/>
+				<SupportVector vectorId="77"/>
+				<SupportVector vectorId="78"/>
+				<SupportVector vectorId="79"/>
+			</SupportVectors>
+			<Coefficients absoluteValue="0.011940463229943523">
+				<Coefficient value="5.768229624636697"/>
+				<Coefficient value="0.0"/>
+				<Coefficient value="5.768229624636697"/>
+				<Coefficient value="5.768229624636697"/>
+				<Coefficient value="0.0"/>
+				<Coefficient value="5.768229624636697"/>
+				<Coefficient value="0.0"/>
+				<Coefficient value="0.0"/>
+				<Coefficient value="5.768229624636697"/>
+				<Coefficient value="0.0"/>
+				<Coefficient value="-0.0"/>
+				<Coefficient value="-0.0"/>
+				<Coefficient value="-5.768229624636697"/>
+				<Coefficient value="-5.768229624636697"/>
+				<Coefficient value="-0.0"/>
+				<Coefficient value="-5.768229624636697"/>
+				<Coefficient value="-0.0"/>
+				<Coefficient value="-5.768229624636697"/>
+				<Coefficient value="-5.768229624636697"/>
+				<Coefficient value="-0.0"/>
+			</Coefficients>
+		</SupportVectorMachine>
+		<SupportVectorMachine targetCategory="f" alternateTargetCategory="d">
+			<SupportVectors>
+				<SupportVector vectorId="40"/>
+				<SupportVector vectorId="41"/>
+				<SupportVector vectorId="42"/>
+				<SupportVector vectorId="43"/>
+				<SupportVector vectorId="44"/>
+				<SupportVector vectorId="45"/>
+				<SupportVector vectorId="46"/>
+				<SupportVector vectorId="47"/>
+				<SupportVector vectorId="48"/>
+				<SupportVector vectorId="49"/>
+				<SupportVector vectorId="81"/>
+				<SupportVector vectorId="82"/>
+				<SupportVector vectorId="83"/>
+				<SupportVector vectorId="84"/>
+				<SupportVector vectorId="85"/>
+				<SupportVector vectorId="87"/>
+				<SupportVector vectorId="88"/>
+				<SupportVector vectorId="89"/>
+			</SupportVectors>
+			<Coefficients absoluteValue="0.14110210035576573">
+				<Coefficient value="8.720484272072968"/>
+				<Coefficient value="0.0"/>
+				<Coefficient value="8.720484272072968"/>
+				<Coefficient value="8.720484272072968"/>
+				<Coefficient value="0.0"/>
+				<Coefficient value="1.1384585682139912"/>
+				<Coefficient value="0.0"/>
+				<Coefficient value="7.582025703858977"/>
+				<Coefficient value="8.720484272072968"/>
+				<Coefficient value="0.0"/>
+				<Coefficient value="-3.514262060389832"/>
+				<Coefficient value="-5.206222211683135"/>
+				<Coefficient value="-0.0"/>
+				<Coefficient value="-8.720484272072968"/>
+				<Coefficient value="-0.0"/>
+				<Coefficient value="-8.720484272072968"/>
+				<Coefficient value="-8.720484272072968"/>
+				<Coefficient value="-8.720484272072968"/>
+			</Coefficients>
+		</SupportVectorMachine>
+		<SupportVectorMachine targetCategory="g" alternateTargetCategory="d">
+			<SupportVectors>
+				<SupportVector vectorId="40"/>
+				<SupportVector vectorId="41"/>
+				<SupportVector vectorId="42"/>
+				<SupportVector vectorId="43"/>
+				<SupportVector vectorId="44"/>
+				<SupportVector vectorId="45"/>
+				<SupportVector vectorId="46"/>
+				<SupportVector vectorId="47"/>
+				<SupportVector vectorId="48"/>
+				<SupportVector vectorId="49"/>
+				<SupportVector vectorId="90"/>
+				<SupportVector vectorId="91"/>
+				<SupportVector vectorId="92"/>
+				<SupportVector vectorId="93"/>
+				<SupportVector vectorId="94"/>
+				<SupportVector vectorId="95"/>
+				<SupportVector vectorId="96"/>
+				<SupportVector vectorId="97"/>
+				<SupportVector vectorId="98"/>
+				<SupportVector vectorId="99"/>
+			</SupportVectors>
+			<Coefficients absoluteValue="0.02204042456430045">
+				<Coefficient value="8.186611546696803"/>
+				<Coefficient value="0.0"/>
+				<Coefficient value="8.186611546696803"/>
+				<Coefficient value="8.186611546696803"/>
+				<Coefficient value="0.0"/>
+				<Coefficient value="8.186611546696803"/>
+				<Coefficient value="0.0"/>
+				<Coefficient value="0.0"/>
+				<Coefficient value="8.186611546696803"/>
+				<Coefficient value="0.0"/>
+				<Coefficient value="-8.186611546696803"/>
+				<Coefficient value="-8.186611546696803"/>
+				<Coefficient value="-0.0"/>
+				<Coefficient value="-0.0"/>
+				<Coefficient value="-0.0"/>
+				<Coefficient value="-0.0"/>
+				<Coefficient value="-8.186611546696803"/>
+				<Coefficient value="-8.186611546696803"/>
+				<Coefficient value="-0.0"/>
+				<Coefficient value="-8.186611546696803"/>
+			</Coefficients>
+		</SupportVectorMachine>
+		<SupportVectorMachine targetCategory="e" alternateTargetCategory="dm">
+			<SupportVectors>
+				<SupportVector vectorId="50"/>
+				<SupportVector vectorId="51"/>
+				<SupportVector vectorId="52"/>
+				<SupportVector vectorId="53"/>
+				<SupportVector vectorId="54"/>
+				<SupportVector vectorId="56"/>
+				<SupportVector vectorId="57"/>
+				<SupportVector vectorId="58"/>
+				<SupportVector vectorId="59"/>
+				<SupportVector vectorId="60"/>
+				<SupportVector vectorId="61"/>
+				<SupportVector vectorId="62"/>
+				<SupportVector vectorId="63"/>
+				<SupportVector vectorId="64"/>
+				<SupportVector vectorId="65"/>
+				<SupportVector vectorId="66"/>
+				<SupportVector vectorId="67"/>
+				<SupportVector vectorId="68"/>
+				<SupportVector vectorId="69"/>
+			</SupportVectors>
+			<Coefficients absoluteValue="-0.02560309612110143">
+				<Coefficient value="0.0"/>
+				<Coefficient value="0.0"/>
+				<Coefficient value="4.95116570436521"/>
+				<Coefficient value="0.0"/>
+				<Coefficient value="4.95116570436521"/>
+				<Coefficient value="4.95116570436521"/>
+				<Coefficient value="4.95116570436521"/>
+				<Coefficient value="0.0"/>
+				<Coefficient value="4.95116570436521"/>
+				<Coefficient value="-0.0"/>
+				<Coefficient value="-4.95116570436521"/>
+				<Coefficient value="-3.0985789000747883"/>
+				<Coefficient value="-4.95116570436521"/>
+				<Coefficient value="-0.0"/>
+				<Coefficient value="-1.8525868042904219"/>
+				<Coefficient value="-0.0"/>
+				<Coefficient value="-4.95116570436521"/>
+				<Coefficient value="-4.95116570436521"/>
+				<Coefficient value="-0.0"/>
+			</Coefficients>
+		</SupportVectorMachine>
+		<SupportVectorMachine targetCategory="em" alternateTargetCategory="dm">
+			<SupportVectors>
+				<SupportVector vectorId="50"/>
+				<SupportVector vectorId="51"/>
+				<SupportVector vectorId="52"/>
+				<SupportVector vectorId="53"/>
+				<SupportVector vectorId="54"/>
+				<SupportVector vectorId="56"/>
+				<SupportVector vectorId="57"/>
+				<SupportVector vectorId="58"/>
+				<SupportVector vectorId="59"/>
+				<SupportVector vectorId="70"/>
+				<SupportVector vectorId="71"/>
+				<SupportVector vectorId="72"/>
+				<SupportVector vectorId="73"/>
+				<SupportVector vectorId="74"/>
+				<SupportVector vectorId="75"/>
+				<SupportVector vectorId="76"/>
+				<SupportVector vectorId="77"/>
+				<SupportVector vectorId="78"/>
+				<SupportVector vectorId="79"/>
+			</SupportVectors>
+			<Coefficients absoluteValue="-0.009629566598614647">
+				<Coefficient value="0.0"/>
+				<Coefficient value="0.0"/>
+				<Coefficient value="4.867355162725845"/>
+				<Coefficient value="4.867355162725845"/>
+				<Coefficient value="4.867355162725845"/>
+				<Coefficient value="4.867355162725845"/>
+				<Coefficient value="0.0"/>
+				<Coefficient value="0.0"/>
+				<Coefficient value="4.867355162725845"/>
+				<Coefficient value="-0.0"/>
+				<Coefficient value="-0.0"/>
+				<Coefficient value="-4.867355162725845"/>
+				<Coefficient value="-3.7920772707159003"/>
+				<Coefficient value="-1.0752778920099446"/>
+				<Coefficient value="-4.867355162725845"/>
+				<Coefficient value="-0.0"/>
+				<Coefficient value="-4.867355162725845"/>
+				<Coefficient value="-4.867355162725845"/>
+				<Coefficient value="-0.0"/>
+			</Coefficients>
+		</SupportVectorMachine>
+		<SupportVectorMachine targetCategory="f" alternateTargetCategory="dm">
+			<SupportVectors>
+				<SupportVector vectorId="50"/>
+				<SupportVector vectorId="51"/>
+				<SupportVector vectorId="52"/>
+				<SupportVector vectorId="53"/>
+				<SupportVector vectorId="54"/>
+				<SupportVector vectorId="56"/>
+				<SupportVector vectorId="57"/>
+				<SupportVector vectorId="58"/>
+				<SupportVector vectorId="59"/>
+				<SupportVector vectorId="81"/>
+				<SupportVector vectorId="82"/>
+				<SupportVector vectorId="83"/>
+				<SupportVector vectorId="84"/>
+				<SupportVector vectorId="85"/>
+				<SupportVector vectorId="87"/>
+				<SupportVector vectorId="88"/>
+				<SupportVector vectorId="89"/>
+			</SupportVectors>
+			<Coefficients absoluteValue="0.08506521336939225">
+				<Coefficient value="0.0"/>
+				<Coefficient value="0.0"/>
+				<Coefficient value="8.658070978547592"/>
+				<Coefficient value="8.658070978547592"/>
+				<Coefficient value="8.658070978547592"/>
+				<Coefficient value="8.658070978547592"/>
+				<Coefficient value="0.0"/>
+				<Coefficient value="0.0"/>
+				<Coefficient value="8.658070978547592"/>
+				<Coefficient value="-0.0"/>
+				<Coefficient value="-8.658070978547592"/>
+				<Coefficient value="-0.0"/>
+				<Coefficient value="-8.658070978547592"/>
+				<Coefficient value="-0.0"/>
+				<Coefficient value="-8.658070978547592"/>
+				<Coefficient value="-8.658070978547592"/>
+				<Coefficient value="-8.658070978547592"/>
+			</Coefficients>
+		</SupportVectorMachine>
+		<SupportVectorMachine targetCategory="g" alternateTargetCategory="dm">
+			<SupportVectors>
+				<SupportVector vectorId="50"/>
+				<SupportVector vectorId="51"/>
+				<SupportVector vectorId="52"/>
+				<SupportVector vectorId="53"/>
+				<SupportVector vectorId="54"/>
+				<SupportVector vectorId="56"/>
+				<SupportVector vectorId="57"/>
+				<SupportVector vectorId="58"/>
+				<SupportVector vectorId="59"/>
+				<SupportVector vectorId="90"/>
+				<SupportVector vectorId="91"/>
+				<SupportVector vectorId="92"/>
+				<SupportVector vectorId="93"/>
+				<SupportVector vectorId="94"/>
+				<SupportVector vectorId="95"/>
+				<SupportVector vectorId="96"/>
+				<SupportVector vectorId="97"/>
+				<SupportVector vectorId="98"/>
+				<SupportVector vectorId="99"/>
+			</SupportVectors>
+			<Coefficients absoluteValue="-0.01687623531415575">
+				<Coefficient value="0.0"/>
+				<Coefficient value="0.0"/>
+				<Coefficient value="6.093631481183504"/>
+				<Coefficient value="6.093631481183504"/>
+				<Coefficient value="6.093631481183504"/>
+				<Coefficient value="0.47603510277511424"/>
+				<Coefficient value="5.61759637840839"/>
+				<Coefficient value="0.0"/>
+				<Coefficient value="6.093631481183504"/>
+				<Coefficient value="-6.093631481183504"/>
+				<Coefficient value="-6.093631481183504"/>
+				<Coefficient value="-0.0"/>
+				<Coefficient value="-0.0"/>
+				<Coefficient value="-0.0"/>
+				<Coefficient value="-0.0"/>
+				<Coefficient value="-6.093631481183504"/>
+				<Coefficient value="-6.093631481183504"/>
+				<Coefficient value="-0.0"/>
+				<Coefficient value="-6.093631481183504"/>
+			</Coefficients>
+		</SupportVectorMachine>
+		<SupportVectorMachine targetCategory="em" alternateTargetCategory="e">
+			<SupportVectors>
+				<SupportVector vectorId="60"/>
+				<SupportVector vectorId="61"/>
+				<SupportVector vectorId="62"/>
+				<SupportVector vectorId="63"/>
+				<SupportVector vectorId="64"/>
+				<SupportVector vectorId="65"/>
+				<SupportVector vectorId="66"/>
+				<SupportVector vectorId="67"/>
+				<SupportVector vectorId="68"/>
+				<SupportVector vectorId="69"/>
+				<SupportVector vectorId="70"/>
+				<SupportVector vectorId="71"/>
+				<SupportVector vectorId="72"/>
+				<SupportVector vectorId="73"/>
+				<SupportVector vectorId="74"/>
+				<SupportVector vectorId="75"/>
+				<SupportVector vectorId="76"/>
+				<SupportVector vectorId="77"/>
+				<SupportVector vectorId="78"/>
+				<SupportVector vectorId="79"/>
+			</SupportVectors>
+			<Coefficients absoluteValue="0.24217406112651424">
+				<Coefficient value="16.05103507130406"/>
+				<Coefficient value="16.05103507130406"/>
+				<Coefficient value="0.0"/>
+				<Coefficient value="0.0"/>
+				<Coefficient value="16.05103507130406"/>
+				<Coefficient value="0.0"/>
+				<Coefficient value="16.05103507130406"/>
+				<Coefficient value="16.05103507130406"/>
+				<Coefficient value="0.0"/>
+				<Coefficient value="0.0"/>
+				<Coefficient value="-16.05103507130406"/>
+				<Coefficient value="-0.0"/>
+				<Coefficient value="-16.05103507130406"/>
+				<Coefficient value="-16.05103507130406"/>
+				<Coefficient value="-0.0"/>
+				<Coefficient value="-16.05103507130406"/>
+				<Coefficient value="-0.0"/>
+				<Coefficient value="-16.05103507130406"/>
+				<Coefficient value="-0.0"/>
+				<Coefficient value="-0.0"/>
+			</Coefficients>
+		</SupportVectorMachine>
+		<SupportVectorMachine targetCategory="f" alternateTargetCategory="e">
+			<SupportVectors>
+				<SupportVector vectorId="60"/>
+				<SupportVector vectorId="61"/>
+				<SupportVector vectorId="62"/>
+				<SupportVector vectorId="63"/>
+				<SupportVector vectorId="64"/>
+				<SupportVector vectorId="65"/>
+				<SupportVector vectorId="66"/>
+				<SupportVector vectorId="67"/>
+				<SupportVector vectorId="68"/>
+				<SupportVector vectorId="69"/>
+				<SupportVector vectorId="81"/>
+				<SupportVector vectorId="82"/>
+				<SupportVector vectorId="83"/>
+				<SupportVector vectorId="84"/>
+				<SupportVector vectorId="85"/>
+				<SupportVector vectorId="87"/>
+				<SupportVector vectorId="88"/>
+				<SupportVector vectorId="89"/>
+			</SupportVectors>
+			<Coefficients absoluteValue="0.008216852778842374">
+				<Coefficient value="0.0"/>
+				<Coefficient value="5.13661156494107"/>
+				<Coefficient value="2.8184037528169252"/>
+				<Coefficient value="5.13661156494107"/>
+				<Coefficient value="0.0"/>
+				<Coefficient value="2.318207812124145"/>
+				<Coefficient value="0.0"/>
+				<Coefficient value="5.13661156494107"/>
+				<Coefficient value="5.13661156494107"/>
+				<Coefficient value="0.0"/>
+				<Coefficient value="-5.13661156494107"/>
+				<Coefficient value="-2.9224279525450636"/>
+				<Coefficient value="-1.2182842149307969"/>
+				<Coefficient value="-5.13661156494107"/>
+				<Coefficient value="-0.0"/>
+				<Coefficient value="-5.13661156494107"/>
+				<Coefficient value="-0.9958993974652093"/>
+				<Coefficient value="-5.13661156494107"/>
+			</Coefficients>
+		</SupportVectorMachine>
+		<SupportVectorMachine targetCategory="g" alternateTargetCategory="e">
+			<SupportVectors>
+				<SupportVector vectorId="60"/>
+				<SupportVector vectorId="61"/>
+				<SupportVector vectorId="62"/>
+				<SupportVector vectorId="63"/>
+				<SupportVector vectorId="64"/>
+				<SupportVector vectorId="65"/>
+				<SupportVector vectorId="66"/>
+				<SupportVector vectorId="67"/>
+				<SupportVector vectorId="68"/>
+				<SupportVector vectorId="69"/>
+				<SupportVector vectorId="90"/>
+				<SupportVector vectorId="91"/>
+				<SupportVector vectorId="92"/>
+				<SupportVector vectorId="93"/>
+				<SupportVector vectorId="94"/>
+				<SupportVector vectorId="95"/>
+				<SupportVector vectorId="96"/>
+				<SupportVector vectorId="97"/>
+				<SupportVector vectorId="98"/>
+				<SupportVector vectorId="99"/>
+			</SupportVectors>
+			<Coefficients absoluteValue="0.15799459470657387">
+				<Coefficient value="4.642802712445797"/>
+				<Coefficient value="0.0"/>
+				<Coefficient value="0.0"/>
+				<Coefficient value="0.0"/>
+				<Coefficient value="10.079558699961472"/>
+				<Coefficient value="0.0"/>
+				<Coefficient value="10.079558699961472"/>
+				<Coefficient value="10.079558699961472"/>
+				<Coefficient value="10.079558699961472"/>
+				<Coefficient value="5.436755987515675"/>
+				<Coefficient value="-0.0"/>
+				<Coefficient value="-0.0"/>
+				<Coefficient value="-10.079558699961472"/>
+				<Coefficient value="-10.079558699961472"/>
+				<Coefficient value="-10.079558699961472"/>
+				<Coefficient value="-0.0"/>
+				<Coefficient value="-0.0"/>
+				<Coefficient value="-10.079558699961472"/>
+				<Coefficient value="-0.0"/>
+				<Coefficient value="-10.079558699961472"/>
+			</Coefficients>
+		</SupportVectorMachine>
+		<SupportVectorMachine targetCategory="f" alternateTargetCategory="em">
+			<SupportVectors>
+				<SupportVector vectorId="70"/>
+				<SupportVector vectorId="71"/>
+				<SupportVector vectorId="72"/>
+				<SupportVector vectorId="73"/>
+				<SupportVector vectorId="74"/>
+				<SupportVector vectorId="75"/>
+				<SupportVector vectorId="76"/>
+				<SupportVector vectorId="77"/>
+				<SupportVector vectorId="78"/>
+				<SupportVector vectorId="79"/>
+				<SupportVector vectorId="81"/>
+				<SupportVector vectorId="82"/>
+				<SupportVector vectorId="83"/>
+				<SupportVector vectorId="84"/>
+				<SupportVector vectorId="85"/>
+				<SupportVector vectorId="87"/>
+				<SupportVector vectorId="88"/>
+				<SupportVector vectorId="89"/>
+			</SupportVectors>
+			<Coefficients absoluteValue="-0.013672254963920018">
+				<Coefficient value="0.0"/>
+				<Coefficient value="0.0"/>
+				<Coefficient value="5.113842860781611"/>
+				<Coefficient value="4.981318038079883"/>
+				<Coefficient value="0.13252482270172813"/>
+				<Coefficient value="5.113842860781611"/>
+				<Coefficient value="0.0"/>
+				<Coefficient value="5.113842860781611"/>
+				<Coefficient value="5.113842860781611"/>
+				<Coefficient value="0.0"/>
+				<Coefficient value="-5.113842860781611"/>
+				<Coefficient value="-5.113842860781611"/>
+				<Coefficient value="-0.0"/>
+				<Coefficient value="-5.113842860781611"/>
+				<Coefficient value="-0.0"/>
+				<Coefficient value="-5.113842860781611"/>
+				<Coefficient value="-0.0"/>
+				<Coefficient value="-5.113842860781611"/>
+			</Coefficients>
+		</SupportVectorMachine>
+		<SupportVectorMachine targetCategory="g" alternateTargetCategory="em">
+			<SupportVectors>
+				<SupportVector vectorId="70"/>
+				<SupportVector vectorId="71"/>
+				<SupportVector vectorId="72"/>
+				<SupportVector vectorId="73"/>
+				<SupportVector vectorId="74"/>
+				<SupportVector vectorId="75"/>
+				<SupportVector vectorId="76"/>
+				<SupportVector vectorId="77"/>
+				<SupportVector vectorId="78"/>
+				<SupportVector vectorId="79"/>
+				<SupportVector vectorId="90"/>
+				<SupportVector vectorId="91"/>
+				<SupportVector vectorId="92"/>
+				<SupportVector vectorId="93"/>
+				<SupportVector vectorId="94"/>
+				<SupportVector vectorId="95"/>
+				<SupportVector vectorId="96"/>
+				<SupportVector vectorId="97"/>
+				<SupportVector vectorId="98"/>
+				<SupportVector vectorId="99"/>
+			</SupportVectors>
+			<Coefficients absoluteValue="0.36478912861090645">
+				<Coefficient value="0.0"/>
+				<Coefficient value="102.94597226498126"/>
+				<Coefficient value="5.8321393540287065"/>
+				<Coefficient value="102.94597226498126"/>
+				<Coefficient value="0.0"/>
+				<Coefficient value="102.94597226498126"/>
+				<Coefficient value="97.11383291095255"/>
+				<Coefficient value="0.0"/>
+				<Coefficient value="0.0"/>
+				<Coefficient value="102.94597226498126"/>
+				<Coefficient value="-0.0"/>
+				<Coefficient value="-0.0"/>
+				<Coefficient value="-102.94597226498126"/>
+				<Coefficient value="-102.94597226498126"/>
+				<Coefficient value="-102.94597226498126"/>
+				<Coefficient value="-102.94597226498126"/>
+				<Coefficient value="-0.0"/>
+				<Coefficient value="-0.0"/>
+				<Coefficient value="-102.94597226498126"/>
+				<Coefficient value="-0.0"/>
+			</Coefficients>
+		</SupportVectorMachine>
+		<SupportVectorMachine targetCategory="g" alternateTargetCategory="f">
+			<SupportVectors>
+				<SupportVector vectorId="81"/>
+				<SupportVector vectorId="82"/>
+				<SupportVector vectorId="83"/>
+				<SupportVector vectorId="84"/>
+				<SupportVector vectorId="85"/>
+				<SupportVector vectorId="87"/>
+				<SupportVector vectorId="88"/>
+				<SupportVector vectorId="89"/>
+				<SupportVector vectorId="90"/>
+				<SupportVector vectorId="91"/>
+				<SupportVector vectorId="92"/>
+				<SupportVector vectorId="93"/>
+				<SupportVector vectorId="94"/>
+				<SupportVector vectorId="95"/>
+				<SupportVector vectorId="96"/>
+				<SupportVector vectorId="97"/>
+				<SupportVector vectorId="98"/>
+				<SupportVector vectorId="99"/>
+			</SupportVectors>
+			<Coefficients absoluteValue="-0.01897066120450491">
+				<Coefficient value="5.76303041430458"/>
+				<Coefficient value="5.76303041430458"/>
+				<Coefficient value="0.0"/>
+				<Coefficient value="5.76303041430458"/>
+				<Coefficient value="0.0"/>
+				<Coefficient value="5.76303041430458"/>
+				<Coefficient value="0.0"/>
+				<Coefficient value="5.76303041430458"/>
+				<Coefficient value="-5.76303041430458"/>
+				<Coefficient value="-5.76303041430458"/>
+				<Coefficient value="-0.0"/>
+				<Coefficient value="-5.76303041430458"/>
+				<Coefficient value="-0.0"/>
+				<Coefficient value="-0.0"/>
+				<Coefficient value="-5.76303041430458"/>
+				<Coefficient value="-5.76303041430458"/>
+				<Coefficient value="-0.0"/>
+				<Coefficient value="-0.0"/>
+			</Coefficients>
+		</SupportVectorMachine>
+	</SupportVectorMachineModel>
+</PMML>

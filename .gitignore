@@ -1,0 +1,9 @@
+
+.DS_Store
+.idea/
+data_analysis/chord
+data_analysis/data
+data_analysis/pmml
+data_analysis/song
+data_analysis/test
+
