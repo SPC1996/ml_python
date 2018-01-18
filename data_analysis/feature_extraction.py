@@ -4,7 +4,7 @@ from madmom.features.chords import CRFChordRecognitionProcessor
 if __name__ == '__main__':
     feature_process = CNNChordFeatureProcessor()
     decode = CRFChordRecognitionProcessor()
-    file_name = 'test/A#05.wav'
+    file_name = 'test/test.wav'
     features = feature_process(file_name)
     result = decode(features)
     count = 0

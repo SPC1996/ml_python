@@ -16,6 +16,7 @@ from sklearn.svm import LinearSVC
 from sklearn.svm import SVC
 from sklearn.svm import NuSVC
 from sklearn2pmml import PMMLPipeline, sklearn2pmml
+from sklearn.externals import joblib
 
 
 def log(func):
@@ -73,6 +74,11 @@ def draw(chroma_data, title):
     plt.colorbar()
     plt.tight_layout()
     plt.show()
+
+
+@log
+def dump_model(classifier, model_path):
+    joblib.dump(classifier, model_path)
 
 
 @log
@@ -149,14 +155,6 @@ def cross_validation(train_data_path, clf, clf_name='classifier'):
 
 
 if __name__ == '__main__':
-    cross_validation('data/data_cens.csv', SVC(kernel='linear'))
-    # ordered_model = collections.OrderedDict()
-    # ordered_model["RandomForestClassifier"] = RandomForestClassifier()
-    # ordered_model["GradientBoostingClassifier"] = GradientBoostingClassifier()
-    # ordered_model["LinearSVC"] = LinearSVC()
-    # ordered_model["SVC(kernel='linear')"] = SVC(kernel='linear')
-    # ordered_model["SVC(kernel='rbf')"] = SVC(kernel='rbf')
-    # ordered_model["SVC(kernel='poly')"] = SVC(kernel='poly')
-    # ordered_model["NuSVC(kernel='linear')"] = NuSVC(kernel='linear')
-    # ordered_model["NuSVC(kernel='rbf')"] = NuSVC(kernel='rbf')
-    # ordered_model["NuSVC(kernel='poly')"] = NuSVC(kernel='poly')
+    train_set, train_label = load_data('data/train.csv')
+    clf = train(RandomForestClassifier(), train_set, train_label)
+    dump_model(clf, 'rfc_2.m')
